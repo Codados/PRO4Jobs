@@ -77,8 +77,8 @@
 
 ## :chart_with_downwards_trend: BurnDown da 1ª Sprint
 
-
-
+![Screenshot](burn.png)
+<br>
 
 ## 🏁 Planejamento da Sprint Backlog da 2ª Sprint(19/09 - 09/10)
 
