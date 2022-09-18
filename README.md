@@ -21,29 +21,48 @@
 
 ## :page_facing_up: Backlog do Produto:
 <br>
-- Anexo de currículo;<br>
-- Implementação de progresso do Candidato;<br>
-- Cadastro do Candidato a vaga;<br>
-- Login do Candidato;<br>
-- Avaliação de Candidato;<br>
-- Criação de relatório de vaga pelo RH;<br>
-- Visualização de Candidatos Aprovados;<br>
-- Criar modelo de entidade relacional;<br>
-- Criar tabela para armazenar dados;<br>
-- Estabelecer relacionamento com as tabelas;</br>
-- Geração de relatorios para o RH;</br>
-- Login do RH;</br>
-- Visualização de vagas de emprego.</br>
+
+ Prioridade | Requisito |
+| --- | --- |
+|1| Cadastro RH |
+|1| Login RH |
+|1| Gravar dados em CSV|
+|1| Cadastro Candidato |
+|1| Login Candidato|
+|1| Cadastro da Vaga de Emprego |
+|2| Vizualizar Vagas de Emprego |
+|2| Anexo de Currículo |
+|2| Criar Relatório das Vagas|
+|2| Cadastrar Candidato a Vaga de Emprego |
+|2| Avaliar Candidato |
+|2| Realizar Relatório dos Candidatos Aprovados|
+|2| Emitir Relatório dos Candidatos |
+|2| Excluir Vaga de Emprego |
+|3| Alterar Vaga de Emprego |
+|3| Implementar Progresso do Candidato |
+|3| Filtrar Vagas por Área de Atuação |
+|3| Gerar relatório para o RH |
 <br>
- 🏁 Sprint Backlog da 1ª Sprint(29/08 - 18/09):
-
-<br>
- - Cadastro do candidato;</br>
-
-
 
 ## :compass: Cronograma:
 ![Screenshot](Crono.png)
-<br><br>
+<br>
+
+## 🏁 Sprint Backlog da 1ª Sprint(29/08 - 18/09):
+
+ - Cadastro do RH;
+ - Login do RH;
+ - Gravação de dados em arquivo CSV (Temporário).
+<br>
+
+### Atividades Realizadas durante a 1ª Sprint(29/08 - 18/09):
+ 
+ - Modelagem de Dados;
+ - Gráfico BurnDown;
+ - Protótipo de Tela: Cadastro de Candidato. 
+<br>
+
+## 🏁 Planejamento da Sprint Backlog da 2ª Sprint(29/08 - 18/09):
+
 
 
