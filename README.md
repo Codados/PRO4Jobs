@@ -3,11 +3,22 @@
 
 ## Sobre o Projeto PRO4Jobs :desktop_computer:
 
-* PRO4Jobs é uma aplicação Desktop com o objetivo de gerenciar vagas de emprego;
+* PRO4Jobs é uma aplicação Desktop com o objetivo de gerenciar vagas de emprego, otimizar o trabalho das pessoas do setor de Recursos Humanos;
+* O Candidato poderá vizualizar e se candidatar as vagas de emprego que o RH disponibilizará;
 * Este Projeto tem como Cliente a empresa PRO4TECH;
-* Utilizando como linguagem de programação
+* A aplicação tem como linguagem de programação o Java, pois foi a linguagem designada para o Segundo Semestre de Banco de Dados;
+* Para registrar vagas, candidatos e o pessoal do RH, é necessário a criação de um Banco de Dados, o qual será conectado com a linguagem Java.
+<br>
 
-## Integrantes do grupo :man_technologist: : </br>
+## Informações sobre o Cliente :technologist:
+
+| Cliente | Contato |
+| --- | --- |
+| `Rafael Monteiro` | rafael.monteiro@pro4tech.com.br |
+
+<br>
+
+## Integrantes do grupo :woman_technologist: :man_technologist: : </br>
 | Integrante | Função |
 | --- | --- |
 | `Cainan Thomas Branco Santos` | Desenvolvedor |
@@ -42,27 +53,34 @@
 |3| Implementar Progresso do Candidato |
 |3| Filtrar Vagas por Área de Atuação |
 |3| Gerar relatório para o RH |
+
+### Legenda: 1- Imprescendível; 2- Importante; 3- Desejável
 <br>
 
 ## :compass: Cronograma:
 ![Screenshot](Crono.png)
 <br>
 
-## 🏁 Sprint Backlog da 1ª Sprint(29/08 - 18/09):
+## 🏁 Sprint Backlog da 1ª Sprint(29/08 - 18/09)
 
  - Cadastro do RH;
  - Login do RH;
  - Gravação de dados em arquivo CSV (Temporário).
 <br>
 
-### Atividades Realizadas durante a 1ª Sprint(29/08 - 18/09):
+### Atividades Realizadas durante a 1ª Sprint(29/08 - 18/09)
  
  - Modelagem de Dados;
  - Gráfico BurnDown;
  - Protótipo de Tela: Cadastro de Candidato. 
 <br>
 
-## 🏁 Planejamento da Sprint Backlog da 2ª Sprint(19/09 - 09/10):
+## :chart_with_downwards_trend: BurnDown da 1ª Sprint
+
+
+
+
+## 🏁 Planejamento da Sprint Backlog da 2ª Sprint(19/09 - 09/10)
 
 - Cadastro do Candidato;
 - Login do Candidato;
