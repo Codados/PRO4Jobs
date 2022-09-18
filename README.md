@@ -64,5 +64,7 @@
 
 ## 🏁 Planejamento da Sprint Backlog da 2ª Sprint(29/08 - 18/09):
 
-
+- Cadastro do Candidato;
+- Login do Candidato;
+- Cadastro da Vaga.
 
