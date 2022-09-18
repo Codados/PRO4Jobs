@@ -1,11 +1,11 @@
 <h1 align="center"> Grupo Codados</h1>
 <br>
-<h2 align="center">
 
+## Sobre o Projeto PRO4Jobs :desktop_computer:
 
-## Sobre o Projeto :desktop_computer:
-<br>
-* PRO4Jobs é um 
+* PRO4Jobs é uma aplicação Desktop com o objetivo de gerenciar vagas de emprego;
+* Este Projeto tem como Cliente a empresa PRO4TECH;
+* Utilizando como linguagem de programação
 
 ## Integrantes do grupo :man_technologist: : </br>
 | Integrante | Função |
