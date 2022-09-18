@@ -62,7 +62,7 @@
  - Protótipo de Tela: Cadastro de Candidato. 
 <br>
 
-## 🏁 Planejamento da Sprint Backlog da 2ª Sprint(29/08 - 18/09):
+## 🏁 Planejamento da Sprint Backlog da 2ª Sprint(19/09 - 09/10):
 
 - Cadastro do Candidato;
 - Login do Candidato;
