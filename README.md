@@ -35,14 +35,14 @@
 
  Prioridade | Requisito |
 | --- | --- |
-|1| Cadastro RH |
+|1| Cadastrar RH |
 |1| Login RH |
 |1| Gravar dados em CSV|
-|1| Cadastro Candidato |
+|1| Cadastrar Candidato |
 |1| Login Candidato|
-|1| Cadastro da Vaga de Emprego |
+|1| Cadastrar Vaga de Emprego |
 |2| Vizualizar Vagas de Emprego |
-|2| Anexo de Currículo |
+|2| Anexar Currículo |
 |2| Criar Relatório das Vagas|
 |2| Cadastrar Candidato a Vaga de Emprego |
 |2| Avaliar Candidato |
@@ -63,16 +63,17 @@
 
 ## 🏁 Sprint Backlog da 1ª Sprint(29/08 - 18/09)
 
- - Cadastro do RH;
- - Login do RH;
- - Gravação de dados em arquivo CSV (Temporário).
+ - Cadastrar RH;
+ - Login RH;
+ - Gravar dados em arquivo CSV (Temporário).
+ - Protótipo de Tela: Cadastro de Candidato. 
 <br>
 
 ### Atividades Realizadas durante a 1ª Sprint(29/08 - 18/09)
  
  - Modelagem de Dados;
  - Gráfico BurnDown;
- - Protótipo de Tela: Cadastro de Candidato. 
+ - Levantamento de Requisitos Funcionais.
 <br>
 
 ## :chart_with_downwards_trend: BurnDown da 1ª Sprint
