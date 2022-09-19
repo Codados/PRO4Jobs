@@ -8,6 +8,7 @@
 * Este Projeto tem como Cliente a empresa PRO4TECH;
 * A aplicação tem como linguagem de programação o Java, pois foi a linguagem designada para o Segundo Semestre de Banco de Dados;
 * Para registrar vagas, candidatos e o pessoal do RH, é necessário a criação de um Banco de Dados, o qual será conectado com a linguagem Java.
+* Utilizando a Metodologia Scrum, a equipe pode desenvolver este Projeto com agilidade, qualidade e boa organização.
 <br>
 
 ## Informações sobre o Cliente :technologist:
@@ -80,6 +81,10 @@
  - Gráfico BurnDown;
  - Levantamento de Requisitos Funcionais.
 <br>
+
+## Divisão de Tarefas (Trello)
+
+
 
 ## :chart_with_downwards_trend: BurnDown da 1ª Sprint
 
