@@ -7,7 +7,7 @@
 * O Candidato poderá vizualizar e se candidatar as vagas de emprego que o RH disponibilizará;
 * Este Projeto tem como Cliente a empresa PRO4TECH;
 * A aplicação tem como linguagem de programação o Java, pois foi a linguagem designada para o Segundo Semestre de Banco de Dados;
-* Para registrar vagas, candidatos e o pessoal do RH, é necessário a criação de um Banco de Dados, o qual será conectado com a linguagem Java.
+* Para registrar vagas, candidatos e o pessoal do RH, é necessário a criação de um Banco de Dados, o qual será conectado com a linguagem Java;
 * Utilizando a Metodologia Scrum, a equipe pode desenvolver este Projeto com agilidade, qualidade e boa organização.
 <br>
 
@@ -58,7 +58,7 @@
 ### Legenda: 1- Imprescendível; 2- Importante; 3- Desejável
 <br>
 
-## Teconologias Utilizadas :electric_plug:
+## Tecnologias Utilizadas :electric_plug:
 ![Screenshot](tec.png)
 <br><br>
 
