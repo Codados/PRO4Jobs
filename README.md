@@ -57,6 +57,11 @@
 ### Legenda: 1- Imprescendível; 2- Importante; 3- Desejável
 <br>
 
+## Teconologias Utilizadas
+
+
+
+
 ## :compass: Cronograma:
 ![Screenshot](Crono.png)
 <br>
