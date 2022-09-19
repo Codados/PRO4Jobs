@@ -58,7 +58,7 @@
 <br>
 
 ## Teconologias Utilizadas
-
+![Screenshot](tec.png)
 
 
 
