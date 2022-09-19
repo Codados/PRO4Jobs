@@ -83,8 +83,8 @@
 <br>
 
 ## Divisão de Tarefas (Trello)
-
-
+![Screenshot](trello1.png)
+<br>
 
 ## :chart_with_downwards_trend: BurnDown da 1ª Sprint
 
