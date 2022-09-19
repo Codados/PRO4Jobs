@@ -57,9 +57,9 @@
 ### Legenda: 1- Imprescendível; 2- Importante; 3- Desejável
 <br>
 
-## Teconologias Utilizadas
+## Teconologias Utilizadas :electric_plug:
 ![Screenshot](tec.png)
-
+<br><br>
 
 
 ## :compass: Cronograma:
