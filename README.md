@@ -97,3 +97,7 @@
 - Login do Candidato;
 - Cadastro da Vaga.
 
+## Demonstração do Projeto
+![Screenshot](tela1.png)
+<br>
+![Screenshot](tela2.png)
