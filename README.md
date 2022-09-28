@@ -67,6 +67,10 @@
 ![Screenshot](Crono.png)
 <br>
 
+## Users Storys
+
+<br>
+
 ## 🏁 Sprint Backlog da 1ª Sprint(29/08 - 18/09)
 
  - Cadastrar RH;
