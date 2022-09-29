@@ -1,5 +1,8 @@
 <h1 align="center"> Grupo Codados</h1>
-![Screenshot](PRO4Jobs.png)
+
+<p align = "center">
+<img width="460" height="460" src="PRO4Jobs.png">
+</p>
 <br>
 
 ## Sobre o Projeto PRO4Jobs :desktop_computer:
