@@ -69,6 +69,10 @@
 
 ## Users Storys
 ### Sprint 1:
+* Como __RH__ desejo __me cadastrar com os meus dados__ para __executar minhas funções na empresa__.
+* Como __RH__ desejo __logar na aplicação__ para __acessar o sistema__.
+
+<br>
 
 ### Sprint 2:
 * Como __Candidato__ desejo __me cadastrar com meus dados pessoais__ para __me candidatar a vagas de emprego__.
@@ -101,11 +105,12 @@
 ![Screenshot](burn.png)
 <br>
 
-## 🏁 Planejamento da Sprint Backlog da 2ª Sprint(19/09 - 09/10)
+## 🏁 Sprint Backlog da 2ª Sprint(19/09 - 09/10)
 
-- Cadastro do Candidato;
-- Login do Candidato;
-- Cadastro da Vaga.
+- Cadastrar Candidato;
+- Logar Candidato;
+- Cadastrar Vaga;
+- Visualizar Vagas.
 
 ## Demonstração do Projeto
 ![Screenshot](tela1.png)
