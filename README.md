@@ -1,5 +1,7 @@
 <h1 align="center"> Grupo Codados</h1>
 <br>
+![Screenshot](PRO4Jobs.png)
+
 
 ## Sobre o Projeto PRO4Jobs :desktop_computer:
 
