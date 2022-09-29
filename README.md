@@ -1,7 +1,7 @@
 <h1 align="center"> Grupo Codados</h1>
 
 <p align = "center">
-<img width="460" height="460" src="PRO4Jobs.png">
+<img width="460" height="460" src="PRO4Jobs.gif">
 </p>
 <br>
 
