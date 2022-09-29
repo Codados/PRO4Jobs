@@ -67,7 +67,7 @@
 ![Screenshot](Crono.png)
 <br>
 
-## Users Storys
+## Users Storys :man_shrugging:
 ### Sprint 1:
 * Como __RH__ desejo __me cadastrar com os meus dados__ para __executar minhas funções na empresa__.
 * Como __RH__ desejo __logar na aplicação__ para __acessar o sistema__.
@@ -111,6 +111,14 @@
 - Logar Candidato;
 - Cadastrar Vaga;
 - Visualizar Vagas.
+
+<br>
+
+###  Atividades Realizadas durante a 2ª Sprint(19/09 - 09/10)
+- Modelo de Entidade Relacional;
+- Criar Script SQL;
+- Criar design das Telas.
+<br>
 
 ## Demonstração do Projeto
 ![Screenshot](tela1.png)
