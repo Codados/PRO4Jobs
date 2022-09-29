@@ -68,6 +68,12 @@
 <br>
 
 ## Users Storys
+### Sprint 1:
+
+### Sprint 2:
+* Como __Candidato__ desejo __me cadastrar com meus dados pessoais__ para __me candidatar a vagas de emprego__.
+* Como __Candidato__ desejo __logar na aplicação__ para __conseguir acessar as informações do sistema__.
+* Como __RH__ desejo __cadastrar vagas de emprego__ para __que os candidatos possam se candidatar__.
 
 <br>
 
