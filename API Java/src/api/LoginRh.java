@@ -4,7 +4,6 @@
  */
 package api;
 
-import static api.TelaCdastroRh.Rh1;
 import javax.swing.JOptionPane;
 /**
  *
@@ -12,8 +11,10 @@ import javax.swing.JOptionPane;
  */
 public class LoginRh extends javax.swing.JFrame {
 
-    public static Rh Rh2 = new Rh("","","","","","");
-    /**
+    Rh Rh2 = new Rh("","","","","","");
+    
+    
+     /**
      * Creates new form LoginRh
      */
     public LoginRh() {
@@ -157,16 +158,8 @@ public class LoginRh extends javax.swing.JFrame {
     }//GEN-LAST:event_txtsenhaActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        if (Rh2.getCpf().equals(Rh1.getCpf())){
-            if (Rh2.getSenha().equals(Rh1.getSenha())){
-                JOptionPane.showMessageDialog(null,"Bem-Vindo!");
-            } else{
-                JOptionPane.showMessageDialog(null,"Senha Incorreta");
-            }
-
-        } else{
-            JOptionPane.showMessageDialog(null,"CPF Errado");
-        }
+            
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
