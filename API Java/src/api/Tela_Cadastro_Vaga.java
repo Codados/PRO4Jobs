@@ -117,6 +117,10 @@ public class Tela_Cadastro_Vaga extends javax.swing.JFrame {
         obj_cadastro_vaga.setExpe_prof(Expe_Prof);
         obj_cadastro_vaga.setSalario(Salario);
         
+         Vagadao objvagadao = new Vagadao();
+        
+        objvagadao.cadastrarvaga(obj_cadastro_vaga);
+        
         
         
         
