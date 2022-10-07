@@ -1,4 +1,4 @@
-/*
+    /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
@@ -8,6 +8,7 @@ package api;
  *
  * @author Lucas Emanoel
  */
+
 public class Rh{
     public String Perfil;
     public String Nome_Completo;
@@ -15,7 +16,7 @@ public class Rh{
     public String Email;
     public String Senha;
     public String Confirmar;
-
+    
     public Rh(String Perfil, String Nome_Completo, String Cpf, String Email, String Senha, String Confirmar) {
         this.Perfil = Perfil;
         this.Nome_Completo = Nome_Completo;
@@ -24,6 +25,7 @@ public class Rh{
         this.Senha = Senha;
         this.Confirmar = Confirmar;
     }
+    
 
 
     
@@ -76,8 +78,11 @@ public class Rh{
         this.Confirmar = Confirmar;
     }
     
+    
+    
     public static void main(String[] args) {
         // TODO code application logic here
+        
     }
     
     
