@@ -16,11 +16,11 @@ public class CandidatoDAO {
             pstm = conn.PrepareStatement(sql); 
             pstm.setString(0, objcandidato.getCpf());
             pstm.setString(1,objcandidato.getSenha());
-            pstm.execute();
-            pstm.close();
             ResultSet rs = pstm.executeQuery();
+            return rs;
         } catch(Exception erro){
             JOptionPane.showMessageDialog(null, "CandidatoDAO" + erro);
+            return null;
         }
         
     }
