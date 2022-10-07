@@ -59,7 +59,7 @@ public class CandidatoDAO {
         } catch(Exception erro){
             JOptionPane.showMessageDialog(null, "CandidatoDAO" + erro);
         }
-             public void LoginCandidato(Candidato objcandidato){
+        public void LoginCandidato(Candidato objcandidato){
         String sql = "select * from candidato where cpf = ? and senha = *";
         conn = new Dao.conectaBD();
         
