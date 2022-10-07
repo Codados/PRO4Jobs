@@ -8,7 +8,7 @@ public class CandidatoDAO {
     Connection conn;
     PreparedStatement pstm;
     
-    public void LoginCandidato(Login_candidato objcandidato){
+    public ResultSet LoginCandidato(Login_candidato objcandidato){
         String sql = "select * from candidato where cpf = ? and senha = ?";
         conn = new ConexaoDao.conectaBD();
         
