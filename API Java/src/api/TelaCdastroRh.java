@@ -17,9 +17,9 @@ import java.util.ArrayList;
  */
 public class TelaCdastroRh extends javax.swing.JFrame {
 
-    private static final String CSV = "cadastrorh.csv";
+   
 
-    public static Rh Rh1 = new Rh("","","","","","");
+    
     /**
      * Creates new form TelaCdastroRh
      */
@@ -47,29 +47,22 @@ public class TelaCdastroRh extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         pane = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
-        jPanel5 = new javax.swing.JPanel();
-        jPanel6 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
-        jPanel10 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
-        txtsenha2 = new javax.swing.JPasswordField();
-        jLabel6 = new javax.swing.JLabel();
-        txtsenha = new javax.swing.JPasswordField();
-        txtemail = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        txtcpf = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
         txtnome = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        botao = new javax.swing.JRadioButton();
-        boatao2 = new javax.swing.JRadioButton();
+        txtemail = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        txtcpf = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
+        txtsenha = new javax.swing.JPasswordField();
+        jLabel6 = new javax.swing.JLabel();
+        txtsenha2 = new javax.swing.JPasswordField();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        botao = new javax.swing.JComboBox<>();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu8 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
@@ -90,19 +83,13 @@ public class TelaCdastroRh extends javax.swing.JFrame {
         pane.setBackground(new java.awt.Color(204, 204, 204));
         pane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setBackground(new java.awt.Color(243, 84, 22));
-        jLabel2.setFont(new java.awt.Font("Sitka Text", 0, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(243, 84, 22));
-        jLabel2.setText("Cadastro RH");
-        pane.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, -1, -1));
-
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 140, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -111,140 +98,31 @@ public class TelaCdastroRh extends javax.swing.JFrame {
 
         pane.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(236, 43, -1, -1));
 
-        jPanel4.setBackground(new java.awt.Color(243, 84, 22));
-        jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 140, Short.MAX_VALUE)
-        );
-
-        pane.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 190, 10, -1));
-
-        jButton2.setText("Salvar Dados");
+        jButton2.setFont(new java.awt.Font("Lucida Sans Unicode", 1, 12)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("CADASTRE - SE");
+        jButton2.setContentAreaFilled(false);
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        pane.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 350, 110, 30));
-
-        jPanel5.setBackground(new java.awt.Color(0, 0, 0));
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 220, Short.MAX_VALUE)
-        );
-
-        pane.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 110, -1, -1));
-
-        jPanel6.setBackground(new java.awt.Color(102, 102, 102));
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 280, Short.MAX_VALUE)
-        );
-
-        pane.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 50, -1, -1));
-
-        jPanel9.setBackground(new java.awt.Color(0, 0, 0));
-
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 280, Short.MAX_VALUE)
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-
-        pane.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
-
-        jPanel10.setBackground(new java.awt.Color(243, 84, 22));
-
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-
-        pane.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 310, -1, -1));
+        pane.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 513, 240, 30));
 
         jButton1.setText("Limpar");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        pane.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 350, 80, 30));
+        pane.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 513, 80, 30));
 
-        jLabel8.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(243, 84, 22));
-        jLabel8.setText("Repita a Senha:");
-
-        txtsenha2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtsenha2ActionPerformed(evt);
-            }
-        });
-
-        jLabel6.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(243, 84, 22));
-        jLabel6.setText("Senha:");
-
-        txtsenha.setFont(new java.awt.Font("Sitka Text", 0, 12)); // NOI18N
-        txtsenha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtsenhaActionPerformed(evt);
-            }
-        });
-
-        txtemail.setFont(new java.awt.Font("Sitka Text", 0, 12)); // NOI18N
-        txtemail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtemailActionPerformed(evt);
-            }
-        });
-
-        jLabel5.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(243, 84, 22));
-        jLabel5.setText("Email:");
-
-        jLabel4.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(243, 84, 22));
-        jLabel4.setText("CPF:");
-
-        txtcpf.setFont(new java.awt.Font("Sitka Text", 0, 12)); // NOI18N
-        txtcpf.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtcpfActionPerformed(evt);
-            }
-        });
+        jLabel7.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(243, 84, 22));
+        jLabel7.setText("Perfil:");
+        pane.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, -1, -1));
 
         txtnome.setFont(new java.awt.Font("Sitka Text", 0, 12)); // NOI18N
         txtnome.addActionListener(new java.awt.event.ActionListener() {
@@ -252,106 +130,75 @@ public class TelaCdastroRh extends javax.swing.JFrame {
                 txtnomeActionPerformed(evt);
             }
         });
+        pane.add(txtnome, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 600, 23));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(243, 84, 22));
-        jLabel3.setText("Nome Completo:");
+        jLabel3.setText("Nome");
+        pane.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, -1, 23));
 
-        jLabel7.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(243, 84, 22));
-        jLabel7.setText("Perfil:");
+        txtemail.setFont(new java.awt.Font("Sitka Text", 0, 12)); // NOI18N
+        txtemail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtemailActionPerformed(evt);
+            }
+        });
+        pane.add(txtemail, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 290, 600, -1));
 
-        botao.setText("RH");
+        jLabel5.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(243, 84, 22));
+        jLabel5.setText("Email");
+        pane.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 270, -1, -1));
+
+        txtcpf.setFont(new java.awt.Font("Sitka Text", 0, 12)); // NOI18N
+        txtcpf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtcpfActionPerformed(evt);
+            }
+        });
+        pane.add(txtcpf, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 350, 600, -1));
+
+        jLabel4.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(243, 84, 22));
+        jLabel4.setText("CPF");
+        pane.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, -1, -1));
+
+        txtsenha.setFont(new java.awt.Font("Sitka Text", 0, 12)); // NOI18N
+        txtsenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtsenhaActionPerformed(evt);
+            }
+        });
+        pane.add(txtsenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, 600, -1));
+
+        jLabel6.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(243, 84, 22));
+        jLabel6.setText("Senha");
+        pane.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 390, -1, -1));
+
+        txtsenha2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtsenha2ActionPerformed(evt);
+            }
+        });
+        pane.add(txtsenha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 470, 600, 23));
+
+        jLabel8.setFont(new java.awt.Font("Sitka Text", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(243, 84, 22));
+        jLabel8.setText("Repita a Senha");
+        pane.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 450, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/api/Images/design-cadastro-operador.png"))); // NOI18N
+        pane.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        botao.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Administrador", "Rh" }));
         botao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botaoActionPerformed(evt);
             }
         });
-
-        boatao2.setText("Administrador");
-        boatao2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                boatao2ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel7)
-                        .addGap(6, 6, 6)
-                        .addComponent(botao)
-                        .addGap(6, 6, 6)
-                        .addComponent(boatao2))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addGap(6, 6, 6)
-                        .addComponent(txtnome, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addGap(6, 6, 6)
-                        .addComponent(txtcpf, javax.swing.GroupLayout.PREFERRED_SIZE, 308, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(8, 8, 8)
-                        .addComponent(txtemail, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(6, 6, 6)
-                        .addComponent(txtsenha, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addGap(6, 6, 6)
-                        .addComponent(txtsenha2, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botao)
-                            .addComponent(boatao2))))
-                .addGap(6, 6, 6)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(txtnome, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(6, 6, 6)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(txtcpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(6, 6, 6)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(txtemail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(6, 6, 6)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(txtsenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(6, 6, 6)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8)
-                    .addComponent(txtsenha2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        );
-
-        pane.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 520, 210));
+        pane.add(botao, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, -1, -1));
 
         jMenuBar1.setName("Cadastro RH"); // NOI18N
 
@@ -389,7 +236,7 @@ public class TelaCdastroRh extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pane, javax.swing.GroupLayout.DEFAULT_SIZE, 393, Short.MAX_VALUE)
+            .addComponent(pane, javax.swing.GroupLayout.PREFERRED_SIZE, 393, Short.MAX_VALUE)
         );
 
         pack();
@@ -403,69 +250,52 @@ public class TelaCdastroRh extends javax.swing.JFrame {
         txtsenha2.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void boatao2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boatao2ActionPerformed
-        Rh1.setPerfil(boatao2.getText());
-    }//GEN-LAST:event_boatao2ActionPerformed
-
-    private void botaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoActionPerformed
-        Rh1.setPerfil(botao.getText());
-    }//GEN-LAST:event_botaoActionPerformed
-
     private void txtnomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnomeActionPerformed
-        Rh1.setNome_Completo(txtnome.getText());
     }//GEN-LAST:event_txtnomeActionPerformed
 
     private void txtcpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcpfActionPerformed
-        Rh1.setCpf(txtcpf.getText());
-
+    
     }//GEN-LAST:event_txtcpfActionPerformed
 
     private void txtemailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtemailActionPerformed
-        Rh1.setEmail(txtemail.getText());
-
+    
     }//GEN-LAST:event_txtemailActionPerformed
 
     private void txtsenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsenhaActionPerformed
-        Rh1.setSenha(txtsenha.getText());
-
+    
     }//GEN-LAST:event_txtsenhaActionPerformed
 
     private void txtsenha2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsenha2ActionPerformed
-        Rh1.setConfirmar(txtsenha2.getText());
     }//GEN-LAST:event_txtsenha2ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-
-        if (Rh1.getSenha().equals(Rh1.getConfirmar())){
-            JOptionPane.showMessageDialog(null,"Aguarde, salvando dados");
-            try{
-                FileWriter fw = new FileWriter(new File(CSV),true);
-                CSVWriter cw = new CSVWriter(fw);
-
-                String[] cabecalho = {"Perfil", "Nome_Completo", "CPF", "Email", "Senha"};
-                ArrayList<String[]> data = new ArrayList<String[]>();
-
-                String item1 [] = {Rh1.getPerfil(), Rh1.getCpf(), Rh1.getEmail(),Rh1.getSenha()};
-
-                data.add(cabecalho);
-                data.add(item1);
-                cw.writeAll(data);
-                cw.close();
-                fw.close();
-                JOptionPane.showMessageDialog(null,"Suas informações foram salvas");
-
-            }catch(IOException e){
-                e.printStackTrace();
-            }
-        } else if (Rh1.getSenha() != Rh1.getConfirmar()){
-            JOptionPane.showMessageDialog(null,"As senhas não são as mesmas");
-        }
-
-    }//GEN-LAST:event_jButton2ActionPerformed
+        
+        String Perfil, Nome_Completo, Cpf, Email, Senha;
+        
+        Rh obj_cadastro_rh = new Rh("","","","","","");
+        
+        Perfil = (String) botao.getSelectedItem();
+        Nome_Completo = txtnome.getText();
+        Cpf = txtcpf.getText();
+        Email = txtemail.getText();
+        Senha = txtsenha.getText();
+        
+        obj_cadastro_rh.setPerfil(Perfil);
+        obj_cadastro_rh.setNome_Completo(Nome_Completo);
+        obj_cadastro_rh.setCpf(Cpf);
+        obj_cadastro_rh.setEmail(Email);
+        obj_cadastro_rh.setSenha(Senha);
+    }
+//GEN-LAST:event_jButton2ActionPerformed
 
     private void jRadioButtonMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem1ActionPerformed
         new LoginRh().setVisible(true);
     }//GEN-LAST:event_jRadioButtonMenuItem1ActionPerformed
+
+    private void botaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_botaoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -503,13 +333,12 @@ public class TelaCdastroRh extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JRadioButton boatao2;
-    private javax.swing.JRadioButton botao;
+    private javax.swing.JComboBox<String> botao;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -521,15 +350,9 @@ public class TelaCdastroRh extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu8;
     private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
-    private javax.swing.JPanel pane;
+    public javax.swing.JPanel pane;
     private javax.swing.JTextField txtcpf;
     private javax.swing.JTextField txtemail;
     private javax.swing.JTextField txtnome;
