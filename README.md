@@ -100,9 +100,6 @@
  - Levantamento de Requisitos Funcionais.
 <br>
 
-## Divisão de Tarefas (Trello)
-![Screenshot](trello1.png)
-<br>
 
 ## :chart_with_downwards_trend: BurnDown da 1ª Sprint
 
@@ -127,6 +124,4 @@
 ## Modelo Entidade Relacional
 
 ## Demonstração do Projeto
-![Screenshot](tela1.png)
-<br>
-![Screenshot](tela2.png)
+
