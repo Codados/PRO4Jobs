@@ -63,7 +63,9 @@
 <br>
 
 ## Tecnologias Utilizadas :electric_plug:
-<img width="50" height="50" src="![fimaaa-removebg-preview (1)](https://user-images.githubusercontent.com/102261833/194714511-d8fecd64-4a58-40e6-8ac7-f8fe944b5b54.png)"> <img width="50" height="50" src="![ja_va-removebg-preview](https://user-images.githubusercontent.com/102261833/194714609-13ff4684-36dd-4cbf-8183-00cf4861af95.png)"> <img width="50" height="50" src="![netbeans-removebg-preview](https://user-images.githubusercontent.com/102261833/194714827-c75244dc-44e7-4208-bd2c-36f40a5a77be.png)">
+<img src="(https://user-images.githubusercontent.com/102261833/194714511-d8fecd64-4a58-40e6-8ac7-f8fe944b5b54.png)" width="100" height="100" /> <img src="(https://user-images.githubusercontent.com/102261833/194714609-13ff4684-36dd-4cbf-8183-00cf4861af95.png)"  width="100" height="100"> <img  src="(https://user-images.githubusercontent.com/102261833/194714827-c75244dc-44e7-4208-bd2c-36f40a5a77be.png)"  width="100" height="100">
+
+
 
 
 <br><br>
