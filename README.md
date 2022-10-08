@@ -63,7 +63,7 @@
 <br>
 
 ## Tecnologias Utilizadas :electric_plug:
-![Screenshot](tec.png)
+<img width="50" height="50" src="![fimaaa-removebg-preview (1)](https://user-images.githubusercontent.com/102261833/194713986-fcd4de5f-0b0d-4ab2-b5be-f3cd299bf437.png)"> <img width="50" height="50"  src="![ja_va-removebg-preview](https://user-images.githubusercontent.com/102261833/194714257-dfb51081-ce2d-4d82-994e-c92cc80ec6ea.png)">
 <br><br>
 
 
