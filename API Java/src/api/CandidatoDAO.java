@@ -55,6 +55,37 @@ public class CandidatoDAO {
 
     }
     
+    public void cadastrarexperiencias(Experiencia_Academica objexacd, Candidato objcandidato, Experiecia_Profissional objexprof){
+        
+        String sql = "insert into formacao_academica(descricao,fk_cpf) values (?,?)";
+        
+        String sql2 = "insert into experiencia_profissional(descricao,fk_cpf) values (?,?)";
+        
+        conn = new ConexaoDAO().conectaBD();
+        
+        try{
+            pstm = conn.prepareStatement(sql);
+            
+            pstm.setString(1, objexacd.getDescricao());
+            pstm.setString(2, objcandidato.getCPF());
+            pstm.execute();
+            pstm.close();
+            
+            pstm = conn.prepareStatement(sql2);
+            
+            pstm.setString(1, objexprof.getDescricao());
+            pstm.setString(2,objcandidato.getCPF());
+            pstm.execute();
+            pstm.close();
+            
+            
+        } catch(Exception erro){
+            JOptionPane.showMessageDialog(null, "CandidatoDAO" + erro);
+            
+        }
+        
+    }
+    
     
     public static void main(String[] args) {
         // TODO code application logic here
