@@ -42,11 +42,10 @@
 | --- | --- |
 |1| Cadastrar RH |
 |1| Login RH |
-|1| Gravar dados em CSV|
 |1| Cadastrar Candidato |
 |1| Login Candidato|
 |1| Cadastrar Vaga de Emprego |
-|2| Vizualizar Vagas de Emprego |
+|2| Visualizar Vagas de Emprego |
 |2| Anexar Currículo |
 |2| Criar Relatório das Vagas|
 |2| Cadastrar Candidato a Vaga de Emprego |
@@ -112,7 +111,7 @@
 - Cadastrar Candidato;
 - Logar Candidato;
 - Cadastrar Vaga;
-- Visualizar Vagas.
+- Visualizar Vagas (Desejavel).
 
 <br>
 
