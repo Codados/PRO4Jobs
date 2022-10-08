@@ -3,7 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package api;
-
+import api.conexao.RHdao;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import javax.swing.JOptionPane;
 /**
  *
@@ -11,7 +13,6 @@ import javax.swing.JOptionPane;
  */
 public class LoginRh extends javax.swing.JFrame {
 
-    Rh Rh2 = new Rh("","","","","","");
     
     
      /**
@@ -150,16 +151,41 @@ public class LoginRh extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButtonMenuItem2ActionPerformed
 
     private void txtcpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcpfActionPerformed
-        Rh2.setCpf(txtcpf.getText());
     }//GEN-LAST:event_txtcpfActionPerformed
 
     private void txtsenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsenhaActionPerformed
-         Rh2.setSenha(txtsenha.getText());
     }//GEN-LAST:event_txtsenhaActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-            
         
+         try{
+        String CPF, senha;
+        
+        CPF = txtcpf.getText();
+        senha = txtsenha.getText();
+        
+        Rh objrh = new Rh();
+        
+        objrh.setCpf(CPF);
+        objrh.setSenha(senha);
+        
+        RHdao objrhdao = new RHdao();
+        ResultSet rsrhdao = objrhdao.loginRh(objrh);
+        
+        if (rsrhdao.next()){
+            JOptionPane.showMessageDialog(null, "Bem - Vindo !");
+            new Home().setVisible(true);
+            this.setVisible(false);
+        }else{
+            JOptionPane.showMessageDialog(null, "Acesso Negado, senha ou CPF invalidos");
+            
+            
+        }
+        
+        } catch (SQLException erro){
+            JOptionPane.showMessageDialog(null, "LoginRh" + erro);
+
+        }       
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
