@@ -242,12 +242,16 @@ public class TelaCdastroRh extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        botao1.setText("");
+        boatao2.setText("");
         txtnome.setText("");
         txtcpf.setText("");
         txtemail.setText("");
         txtsenha.setText("");
-        txtsenha2.setText("");
+        txtconfirma.setText("");
+       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtnomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnomeActionPerformed
@@ -268,23 +272,36 @@ public class TelaCdastroRh extends javax.swing.JFrame {
     private void txtsenha2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsenha2ActionPerformed
     }//GEN-LAST:event_txtsenha2ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         
-        String Perfil, Nome_Completo, Cpf, Email, Senha;
+        String perfil, perfil2, cpf, nome, email, senha, confirma;
         
-        Rh obj_cadastro_rh = new Rh("","","","","","");
+        perfil = botao.getText(); //administrador
+        perfil2 = boatao2.getText();
+        cpf = txtcpf.getText();
+        nome = txtnome.getText();
+        email = txtemail.getText();
+        senha = txtsenha.getText();
+        confirma = txtconfirma.getText();
         
-        Perfil = (String) botao.getSelectedItem();
-        Nome_Completo = txtnome.getText();
-        Cpf = txtcpf.getText();
-        Email = txtemail.getText();
-        Senha = txtsenha.getText();
+        Rh objrh = new Rh();
         
-        obj_cadastro_rh.setPerfil(Perfil);
-        obj_cadastro_rh.setNome_Completo(Nome_Completo);
-        obj_cadastro_rh.setCpf(Cpf);
-        obj_cadastro_rh.setEmail(Email);
-        obj_cadastro_rh.setSenha(Senha);
+        objrh.setPerfil(perfil);
+        objrh.setPerfil(perfil2);
+        objrh.setCpf(cpf);
+        objrh.setNome_Completo(nome);
+        objrh.setEmail(email);
+        objrh.setSenha(senha);
+        
+        if (senha.equals(confirma)){
+            
+         RHdao objrhdao = new RHdao();
+         objrhdao.cadastrarRh(objrh);
+                  
+        } else {
+            JOptionPane.showMessageDialog(null, "As senhas nao sao as mesmas");
+        }
+       
     }
 //GEN-LAST:event_jButton2ActionPerformed
 
