@@ -124,6 +124,8 @@
 - Criar design das Telas.
 <br>
 
+## Modelo Entidade Relacional
+
 ## Demonstração do Projeto
 ![Screenshot](tela1.png)
 <br>
