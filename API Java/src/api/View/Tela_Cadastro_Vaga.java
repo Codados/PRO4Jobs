@@ -99,7 +99,7 @@ public class Tela_Cadastro_Vaga extends javax.swing.JFrame {
         String Nome, Descricao, Cargo, Expe_Prof;
         double Salario;
         
-        Cadastro_Vaga obj_cadastro_vaga = new Cadastro_Vaga();
+        Vaga obj_cadastro_vaga = new Vaga();
         
         Nome = txtNome.getText();
         Descricao = txtDescricao.getText();
@@ -115,7 +115,7 @@ public class Tela_Cadastro_Vaga extends javax.swing.JFrame {
         
          Vagadao objvagadao = new Vagadao();
         
-        objvagadao.cadastrarvaga(obj_cadastro_vaga);
+        objvagadao.cadastrarvaga(objvaga);
         
         
         
