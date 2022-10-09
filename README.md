@@ -59,12 +59,15 @@
 |3| Gerar relatório para o RH |
 
 ### Legenda: 1- Imprescendível; 2- Importante; 3- Desejável
-<br>
+<br><br>
 
 ## Tecnologias Utilizadas :electric_plug:
 ![Screenshot](tecnologias.png)
-<br>
+<br><br>
 
+## Kanban
+![Screenshot](org.png)
+<br><br>
 
 ## :compass: Cronograma:
 ![Screenshot](Crono.png)
