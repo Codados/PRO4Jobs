@@ -123,6 +123,10 @@
 - Criar design das Telas.
 <br>
 
+## :chart_with_downwards_trend: BurnDown da 2ª Sprint
+![IMG-20221009-WA0043](https://user-images.githubusercontent.com/102261833/194789682-c46278d3-00e1-4b32-a86b-d49b7eae663e.jpg)
+
+
 ## Modelo Entidade Relacional
 ![Screenshot](MER.png)
 
