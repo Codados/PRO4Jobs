@@ -60,6 +60,7 @@
 
 ### Legenda: 1- Imprescendível; 2- Importante; 3- Desejável
 <br>
+
 <details><summary><h2>Tecnologias Utilizadas :electric_plug:</h2></summary>
 <p align = "center">
 <img width="500" height="400" src="tecnologias.png">
@@ -156,11 +157,14 @@
 - Alterar Vaga de Emprego.
 <br>
 
-## Modelo Entidade Relacional
-![Screenshot](MER.png)
+<details><summary><h2>Modelo Entidade Relacional</h2></summary>
+<p align = "center">
+<img width="850" height="700" src="MER.png">
+</p>
+</details> 
 
-## Demonstração do Projeto
-<br>
+
+<details><summary><h2>Demonstração do Projeto</h2></summary>
 <p align = "center">
 <img width="500" height="400" src="tela1.gif">
 </p>
@@ -172,5 +176,4 @@
 <p align = "center">
 <img width="500" height="400" src="tela3.gif">
 </p>
-
-
+</details> 
