@@ -153,15 +153,15 @@
 ## Demonstração do Projeto
 <br>
 <p align = "center">
-<img width="800" height="800" src="tela1.gif">
+<img width="500" height="400" src="tela1.gif">
 </p>
 <br>
 <p align = "center">
-<img width="800" height="800" src="tela2.gif">
+<img width="492" height="400" src="tela2.gif">
 </p>
 <br>
 <p align = "center">
-<img width="800" height="800" src="tela3.gif">
+<img width="500" height="400" src="tela3.gif">
 </p>
 
 
