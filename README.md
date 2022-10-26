@@ -59,42 +59,51 @@
 |3| Gerar relatório para o RH |
 
 ### Legenda: 1- Imprescendível; 2- Importante; 3- Desejável
-<br><br>
+<br>
+<details><summary><h2>Tecnologias Utilizadas :electric_plug:</h2></summary>
+<p align = "center">
+<img width="500" height="400" src="tecnologias.png">
+</p>
+</details> 
 
-## Tecnologias Utilizadas :electric_plug:
-![Screenshot](tecnologias.png)
-<br><br>
-
-## Kanban
-![Screenshot](org.png)
-<br><br>
+<details><summary><h2>Kanban</h2></summary>
+<p align = "center">
+<img width="800" height="500" src="org.png">
+</p>
+</details>
+<br>
 
 ## :compass: Cronograma:
-![Screenshot](Crono.png)
+<img width="500" height="300" src="Crono.png">
 <br>
 
-## Users Storys :man_shrugging:
-### Sprint 1:
-* Como __RH__ desejo __me cadastrar com os meus dados__ para __executar minhas funções na empresa__.
-* Como __RH__ desejo __autentificar na aplicação__ para __acessar o sistema__.
+<details><summary><h2>Users Storys :man_shrugging:</h2></summary>
+<p>
 
-<br>
+   ## Sprint 1:
+   * Como __RH__ desejo __me cadastrar com os meus dados__ para __executar minhas funções na empresa__.
+   * Como __RH__ desejo __autentificar na aplicação__ para __acessar o sistema__.
+   <br>
 
-### Sprint 2:
-* Como __Candidato__ desejo __me cadastrar com meus dados pessoais__ para __me candidatar a vagas de emprego__.
-* Como __Candidato__ desejo __autentificar na aplicação__ para __conseguir acessar os serviços do sistema__.
-* Como __RH__ desejo __cadastrar vagas de emprego__ para __que os candidatos possam se candidatar__.
-<br>
+  ## Sprint 2:
+  * Como __Candidato__ desejo __me cadastrar com meus dados pessoais__ para __me candidatar a vagas de emprego__.
+  * Como __Candidato__ desejo __autentificar na aplicação__ para __conseguir acessar os serviços do sistema__.
+  * Como __RH__ desejo __cadastrar vagas de emprego__ para __que os candidatos possam se candidatar__.
+ <br>
 
-### Sprint 3:
-* Como __RH__ desejo __alterar as informações das vagas de emprego__ para __que as informações sejam coerentes ao status de uma vaga__.
-* Como __RH__ desejo __excluir as vagas de emprego__ para __quando o limite de vagas forem preenchidas__.
-* Como __Candidato__ desejo __me candidatar a uma vaga de emprego__ para __que eu possa participar do processo seletivo__.
-* Como __RH__ desejo __visualizar as vagas de emprego__ para __fazer o gerenciamento das vagas__.
-* Como __RH__ desejo __visualizar relatórios dos candidatos__ para __realizar o processo seletivo__.
-* Como __Candidato__ desejo __inserir meu currículo__ para __que poder ter mais chances de passar nos processos seletivos__.
-* Como __RH__ desejo __vizualizar os relatórios das vagas de emprego__ para __realizar o devido gerenciamento__.
-<br>
+  ## Sprint 3:
+  * Como __RH__ desejo __alterar as informações das vagas de emprego__ para __que as informações sejam coerentes ao status de uma vaga__.
+  * Como __RH__ desejo __excluir as vagas de emprego__ para __quando o limite de vagas forem preenchidas__.
+  * Como __Candidato__ desejo __me candidatar a uma vaga de emprego__ para __que eu possa participar do processo seletivo__.
+  * Como __RH__ desejo __visualizar as vagas de emprego__ para __fazer o gerenciamento das vagas__.
+  * Como __RH__ desejo __visualizar relatórios dos candidatos__ para __realizar o processo seletivo__.
+  * Como __Candidato__ desejo __inserir meu currículo__ para __que poder ter mais chances de passar nos processos seletivos__.
+  * Como __RH__ desejo __vizualizar os relatórios das vagas de emprego__ para __realizar o devido gerenciamento__.
+ <br>
+
+</p>
+</details>
+
 
 ## 🏁 Sprint Backlog da 1ª Sprint(29/08 - 18/09)
 
