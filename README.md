@@ -84,7 +84,16 @@
 * Como __Candidato__ desejo __me cadastrar com meus dados pessoais__ para __me candidatar a vagas de emprego__.
 * Como __Candidato__ desejo __autentificar na aplicação__ para __conseguir acessar os serviços do sistema__.
 * Como __RH__ desejo __cadastrar vagas de emprego__ para __que os candidatos possam se candidatar__.
+<br>
 
+### Sprint 3:
+* Como __RH__ desejo __alterar as informações das vagas de emprego__ para __que as informações sejam coerentes ao status de uma vaga__.
+* Como __RH__ desejo __excluir as vagas de emprego__ para __quando o limite de vagas forem preenchidas__.
+* Como __Candidato__ desejo __me candidatar a uma vaga de emprego__ para __que eu possa participar do processo seletivo__.
+* Como __RH__ desejo __visualizar as vagas de emprego__ para __fazer o gerenciamento das vagas__.
+* Como __RH__ desejo __visualizar relatórios dos candidatos__ para __realizar o processo seletivo__.
+* Como __Candidato__ desejo __inserir meu currículo__ para __que poder ter mais chances de passar nos processos seletivos__.
+* Como __RH__ desejo __vizualizar os relatórios das vagas de emprego__ para __realizar o devido gerenciamento__.
 <br>
 
 ## 🏁 Sprint Backlog da 1ª Sprint(29/08 - 18/09)
@@ -125,7 +134,18 @@
 
 ## :chart_with_downwards_trend: BurnDown da 2ª Sprint
 ![IMG-20221009-WA0043](https://user-images.githubusercontent.com/102261833/194789682-c46278d3-00e1-4b32-a86b-d49b7eae663e.jpg)
+<br>
 
+## 🏁 Sprint Backlog da 3ª Sprint(13/10 - 06/11)
+
+- Visualizar Vagas de Emprego;
+- Anexar Currículo;
+- Criar relatório das Vagas;
+- Cadastrar Candidato a Vaga;
+- Emitir relatórios dos Candidatos;
+- Excluir Vaga de Emprego;
+- Alterar Vaga de Emprego.
+<br>
 
 ## Modelo Entidade Relacional
 ![Screenshot](MER.png)
