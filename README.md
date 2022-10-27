@@ -75,7 +75,7 @@
 <br>
 
 ## :compass: Cronograma:
-<img width="500" height="300" src="Crono.png">
+<img width="600" height="300" src="Crono.png">
 <br>
 
 <details><summary><h2>Users Storys :man_shrugging:</h2></summary>
