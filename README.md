@@ -31,7 +31,7 @@
 | `Felipe dos Santos Bispo` | Desenvolvedor |
 | `Guilherme Augusto Wunderlich Serapião` | Desenvolvedor |
 | `Júlia Pereira Quitério` | Desenvolvedora |
-| `Lucas Emanoel Teixeira Engracio da Silva` | Product Owner |
+| `Lucas Emanoel Teixeira Engracio da Silva` | Product Owner [![texto alternativo](<img width="60" height="60" src="link.png">)](http://www.twitter.com/meunome "link")|
 | `Marcella Yanes Borges do Amaral` | Scrum Master |
 <br>
 
