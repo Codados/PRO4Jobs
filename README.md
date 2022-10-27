@@ -41,9 +41,9 @@
  Prioridade | Requisito |
 | --- | --- |
 |1| Cadastrar RH |
-|1| Login RH |
+|1| Autentificar RH |
 |1| Cadastrar Candidato |
-|1| Login Candidato|
+|1| Autentificar Candidato|
 |1| Cadastrar Vaga de Emprego |
 |2| Visualizar Vagas de Emprego |
 |2| Anexar Currículo |
