@@ -178,4 +178,4 @@
 <p align = "center">
 <img width="500" height="400" src="tela3.gif">
 </p>
-</details> 
+</details>
