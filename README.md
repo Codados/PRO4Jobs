@@ -28,7 +28,7 @@
 | --- | --- |
 | `Cainan Thomas Branco Santos` | Desenvolvedor |
 | `Daniele de Jesus Souza` | Desenvolvedora |
-| `Felipe dos Santos Bispo` | Desenvolvedor |
+| `Felipe dos Santos Bispo` |  Desenvolvedor <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/felipe-bispo-632104235/ "link") |
 | `Guilherme Augusto Wunderlich Serapião` | Desenvolvedor <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/guilherme-wunderlich-aa56a2228/ "link") |
 | `Júlia Pereira Quitério` | Desenvolvedora <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/j%C3%BAlia-quit%C3%A9rio-934894205/ "link") |
 | `Lucas Emanoel Teixeira Engracio da Silva` |Product Owner <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/lucas-emanoel-teixeira-engracio-da-silva-ab5611234/ "link")|
