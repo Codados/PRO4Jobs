@@ -27,7 +27,7 @@
 | Integrante | Função |
 | --- | --- |
 | `Cainan Thomas Branco Santos` | Desenvolvedor |
-| `Daniele de Jesus Souza` | Desenvolvedora |
+| `Daniele de Jesus Souza` | Desenvolvedora <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/daniele-de-jesus-souza-35859a209 "link")|
 | `Felipe dos Santos Bispo` |  Desenvolvedor <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/felipe-bispo-632104235/ "link") |
 | `Guilherme Augusto Wunderlich Serapião` | Desenvolvedor <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/guilherme-wunderlich-aa56a2228/ "link") |
 | `Júlia Pereira Quitério` | Desenvolvedora <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/j%C3%BAlia-quit%C3%A9rio-934894205/ "link") |
