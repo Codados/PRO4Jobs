@@ -9,7 +9,7 @@ email varchar(30) not null,
 telefone bigint not null,
 endereco varchar(60) null,
 pretencao_salarial numeric(7,2) null,
-senha varchar (10) not null,
+senha varchar(3000) not null,
 primary key (cpf)
 );
 
@@ -29,7 +29,7 @@ cpf varchar(14) not null,
 nome_completo varchar (30) not null,
 email varchar (30) not null,
 perfil varchar (20) not null,
-senha varchar (10) not null,
+senha varchar (3000) not null,
 primary key (cpf)
 );
 
