@@ -133,8 +133,7 @@
 
 - Cadastrar Candidato;
 - Autentificar Candidato;
-- Cadastrar Vaga;
-- Visualizar Vagas (Desejavel).
+- Cadastrar Vaga.
 
 <br>
 
