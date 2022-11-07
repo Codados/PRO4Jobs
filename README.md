@@ -111,7 +111,7 @@
 ## 🏁 Sprint Backlog da 1ª Sprint(29/08 - 18/09)
 
  - Cadastrar RH; 
- - Login RH;
+ - Autentificar RH;
  - Gravar dados em arquivo CSV (Temporário).
  - Protótipo de Tela: Cadastro de Candidato. 
 <br>
@@ -132,7 +132,7 @@
 ## 🏁 Sprint Backlog da 2ª Sprint(19/09 - 09/10)
 
 - Cadastrar Candidato;
-- Logar Candidato;
+- Autentificar Candidato;
 - Cadastrar Vaga;
 - Visualizar Vagas (Desejavel).
 
