@@ -9,6 +9,7 @@ import DTO.Candidato;
 import DTO.Experiencia_Academica;
 import DTO.Experiencia_Profissional;
 import javax.swing.JOptionPane;
+import DTO.ValidaCPF;
 
 /**
  *
@@ -227,16 +228,17 @@ public class CadastroCandidato extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        long telefone ;
+        long telefone;
         double salario;
-        String nome, data, email, CPF, endereco, senha, confirma, formacaoAcademica, formacaoProfissional, naopossuiAcd, naopossuiProf;
+        String nome, data, email, CPF, endereco, senha, confirma, formacaoAcademica, formacaoProfissional, naopossuiAcd, naopossuiProf, CPFV;
 
-        
         Candidato objcandidato = new Candidato();
         Experiencia_Academica objexacd = new Experiencia_Academica();
-        Experiencia_Profissional objexprof= new Experiencia_Profissional();
+        Experiencia_Profissional objexprof = new Experiencia_Profissional();
+
         
         CPF = txtcpf.getText();
+        CPFV = CPF.replaceAll("[^0-9]", "");
         nome = txtnome.getText();
         data = txtdata.getText();
         email = txtemail.getText();
@@ -247,8 +249,7 @@ public class CadastroCandidato extends javax.swing.JFrame {
         confirma = txtconfirma.getText();
         formacaoAcademica = txtacademica.getText();
         formacaoProfissional = txtprofissional.getText();
-        
-        
+
         objcandidato.setCPF(CPF);
         objcandidato.setNome_Completo(nome);
         objcandidato.setData_Nascimento(data);
@@ -258,43 +259,46 @@ public class CadastroCandidato extends javax.swing.JFrame {
         objcandidato.setSalario(salario);
         objcandidato.setSenha(senha);
 
-         if (txtsemacademica.isSelected() && txtsemprofissional.isSelected()) {
+        if (txtsemacademica.isSelected() && txtsemprofissional.isSelected()) {
             objexprof.setDescricao("Nao possui experiencia profissional");
             objexacd.setDescricao("Nao possui formacao academica");
-           
-        } else if (txtsemprofissional.isSelected()){
+
+        } else if (txtsemprofissional.isSelected()) {
             objexprof.setDescricao("Nao possui experiencia profissional");
-            
-            
-        } else if (txtsemacademica.isSelected()){
-           objexacd.setDescricao("Nao possui experiencia academica");
-           
-           
-        } else{
+
+        } else if (txtsemacademica.isSelected()) {
+            objexacd.setDescricao("Nao possui experiencia academica");
+
+        } else {
             objexacd.setDescricao(formacaoAcademica);
             objexprof.setDescricao(formacaoProfissional);
         }
-        
+
         CandidatoDAO objcandidatodao = new CandidatoDAO();
-        
-        if (senha.equals(confirma)){
 
-            objcandidatodao.cadastrarCandidato(objcandidato);
-            objcandidatodao.cadastrarexperiencias(objexacd, objcandidato, objexprof);
-            this.setVisible(false);
-            new LoginCandidato().setVisible(true);
+        if (ValidaCPF.isCPF(CPFV) == true) {
 
-        } else {
-            
-            JOptionPane.showMessageDialog(null, "As senhas não são as mesmas");
+            if (senha.equals(confirma)) {
+
+                objcandidatodao.cadastrarCandidato(objcandidato);
+                objcandidatodao.cadastrarexperiencias(objexacd, objcandidato, objexprof);
+                this.setVisible(false);
+                new LoginCandidato().setVisible(true);
+
+            } else {
+
+                JOptionPane.showMessageDialog(null, "As senhas não são as mesmas");
+            }
         }
-        
+        else {
+            JOptionPane.showMessageDialog(null, "CPF Inválido");
+        }
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtsemacademicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsemacademicaActionPerformed
 
-        
-        if (txtsemacademica.isSelected()){
+        if (txtsemacademica.isSelected()) {
             txtacademica.setVisible(false);
         } else {
             txtacademica.setVisible(true);
@@ -302,13 +306,13 @@ public class CadastroCandidato extends javax.swing.JFrame {
     }//GEN-LAST:event_txtsemacademicaActionPerformed
 
     private void txtsemprofissionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsemprofissionalActionPerformed
-      if (txtsemprofissional.isSelected()){
-          txtprofissional.setVisible(false);
-      } else {
-          txtprofissional.setVisible(true);
-      }
-        
-        
+        if (txtsemprofissional.isSelected()) {
+            txtprofissional.setVisible(false);
+        } else {
+            txtprofissional.setVisible(true);
+        }
+
+
     }//GEN-LAST:event_txtsemprofissionalActionPerformed
 
     /**
