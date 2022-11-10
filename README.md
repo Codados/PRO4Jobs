@@ -97,12 +97,18 @@
   * Como __RH__ desejo __excluir as vagas de emprego__ para __quando o limite de vagas forem preenchidas__.
   * Como __Candidato__ desejo __me candidatar a uma vaga de emprego__ para __que eu possa participar do processo seletivo__.
   * Como __RH__ desejo __visualizar as vagas de emprego__ para __fazer o gerenciamento das vagas__.
-  * Como __RH__ desejo __visualizar relatórios dos candidatos__ para __realizar o processo seletivo__.
-  * Como __Candidato__ desejo __inserir meu currículo__ para __que poder ter mais chances de passar nos processos seletivos__.
-  * Como __RH__ desejo __vizualizar os relatórios das vagas de emprego__ para __realizar o devido gerenciamento__.
+  * Como __RH__ desejo __visualizar relatórios dos candidatos__ para __realizar o processo seletivo__. (Adiado para a Sprint 4)
+  * Como __Candidato__ desejo __inserir meu currículo__ para __que poder ter mais chances de passar nos processos seletivos__. (Adiado para a Sprint 4)
+  * Como __RH__ desejo __vizualizar os relatórios das vagas de emprego__ para __realizar o devido gerenciamento__. (Adiado para a Sprint 4)
  <br>
  
  ## Sprint 4:
+ * Como __Candidato__ desejo __vizualizar meu progresso no processo seletivo__ para __saber como estou indo na vaga__.
+ * Como __RH__ desejo __avaliar os candidatos__ para __dar continuidade ao processo seletivo__.
+ * Como __RH__ desejo __visualizar os relatórios dos candidatos aprovados em uma determinada vaga__ para __contatar eles__.
+ * Como __Candidato__ desejo __ultilizar um filtro de pesquisa de vagas__ para __encontrar vagas que possuo mais afinidade__.
+ * Como __RH__ desejo __visualizar relatórios para o setor de Recursos Humanos__ para __realizar o gerenciamento dos dados__.
+ 
 
 </p>
 </details>
