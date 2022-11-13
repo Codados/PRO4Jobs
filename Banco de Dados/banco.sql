@@ -37,6 +37,8 @@ create table candidato_vaga (
 fk_cpf varchar(14),
 fk_id_vaga int,
 status_vaga varchar (150) null,
+progresso_vaga varchar(200)  null,    
+motivo varchar(200) null,    
 primary key (fk_cpf, fk_id_vaga),
 foreign key (fk_cpf) references candidato (cpf),
 foreign key (fk_id_vaga) references vaga (id_vaga)
