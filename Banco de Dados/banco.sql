@@ -18,9 +18,9 @@ id_vaga int auto_increment not null,
 nome_vaga varchar (30) not null,
 descricao_vaga varchar (200) not null,
 pretencao_salarial numeric(7,2) null,
-cargo varchar(30),
+cargo varchar(30) not null,
 experiencia_profissional_necessaria varchar (120) not null,
-quantidade_candidatos int,    
+quantidade_candidatos int null,    
 primary key (id_vaga)
 );
 
@@ -36,7 +36,7 @@ primary key (cpf)
 create table candidato_vaga (
 fk_cpf varchar(14),
 fk_id_vaga int,
-status_vaga varchar (30),
+status_vaga varchar (150) null,
 primary key (fk_cpf, fk_id_vaga),
 foreign key (fk_cpf) references candidato (cpf),
 foreign key (fk_id_vaga) references vaga (id_vaga)
@@ -44,7 +44,7 @@ foreign key (fk_id_vaga) references vaga (id_vaga)
 
 create table cargo_interesse(
     id_cargo int auto_increment not null,
-    nome varchar(20),
+    nome varchar(20) not null,
     primary key(id_cargo)
 ); 
 
@@ -59,7 +59,7 @@ create table candidato_cargo(
 
 create table experiencia_profissional(
     id_experiencia int auto_increment,
-    descricao varchar(100),
+    descricao varchar(100) not null,
     fk_cpf varchar(14),
     primary key (id_experiencia),
     foreign key (fk_cpf) references candidato(cpf)
@@ -67,7 +67,7 @@ create table experiencia_profissional(
 
 create table formacao_academica(
     id_formacao int auto_increment,
-    descricao varchar(120),
+    descricao varchar(120) not null,
     fk_cpf varchar(14),
     primary key (id_formacao),
     foreign key (fk_cpf) references candidato(cpf)
