@@ -20,6 +20,7 @@ descricao_vaga varchar (200) not null,
 pretencao_salarial numeric(7,2) null,
 cargo varchar(30) not null,
 experiencia_profissional_necessaria varchar (120) not null,
+status varchar(20) not null,    
 quantidade_candidatos int null,    
 primary key (id_vaga)
 );
