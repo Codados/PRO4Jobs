@@ -43,7 +43,7 @@ public class VagaDAO {
                 JOptionPane.showMessageDialog(null, "Você se candidatou para a vaga" + ":" + objvaga.getNome());
                  
             } catch (SQLException erro){
-                JOptionPane.showMessageDialog(null, "alterarnumeroCandidato" + erro);
+                JOptionPane.showMessageDialog(null, "VagaDAO: alterarnumeroCandidato" + erro);
             }
         }   
     
@@ -98,7 +98,7 @@ public class VagaDAO {
                 }
                 
             } catch(SQLException erro){
-                JOptionPane.showMessageDialog(null,"VagaDAO: Pesquisar" + erro);
+                JOptionPane.showMessageDialog(null,"VagaDAO: PesquisarVagas" + erro);
             }
             
             return lista;
@@ -116,7 +116,7 @@ public class VagaDAO {
                 return rs;
                 
             } catch (SQLException erro){
-                JOptionPane.showMessageDialog(null, "Pesquisa" + erro);
+                JOptionPane.showMessageDialog(null, "VagaDAO: Pesquisa" + erro);
                 return null;
             }
         }
