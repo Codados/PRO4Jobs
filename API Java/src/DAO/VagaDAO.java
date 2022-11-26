@@ -50,7 +50,7 @@ public class VagaDAO {
          
         public void cadastrarvaga(Vaga obj_cadastro_vaga){
             
-            String sql = "insert into vaga(nome_vaga, descricao_vaga, pretencao_salarial, cargo, experiencia_profissional_necessaria, quantidade_candidatos) values (?, ?, ?, ?, ?, 0)";
+            String sql = "insert into vaga(nome_vaga, descricao_vaga, pretencao_salarial, cargo, experiencia_profissional_necessaria, quantidade_candidatos, status) values (?, ?, ?, ?, ?, 0,, ?)";
             conn = new ConexaoDAO().conectaBD();
             
             try {
@@ -62,6 +62,7 @@ public class VagaDAO {
                 pstm.setDouble(3,obj_cadastro_vaga.getSalario());
                 pstm.setString(4,obj_cadastro_vaga.getCargo());
                 pstm.setString(5,obj_cadastro_vaga.getExpe_prof());
+                pstm.setString(6, obj_casdastro_vaga.getStatus());
                 
                 pstm.execute();
                 pstm.close();
