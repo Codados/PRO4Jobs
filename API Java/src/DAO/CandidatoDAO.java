@@ -7,11 +7,16 @@ package DAO;
 import DTO.Candidato;
 import DTO.Experiencia_Academica;
 import DTO.Experiencia_Profissional;
+import View.CadastroCandidato;
 import javax.swing.JOptionPane;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  *
@@ -99,7 +104,37 @@ public class CandidatoDAO {
         }
         
     }
+    public boolean BotaArquivo(File f) throws IOException{
+    String sql = "INSERT INTO candidato(arquivo) VALUES (?)";
+    conn = new ConexaoDAO().conectaBD();
     
+    try {
+        pstm = conn.prepareStatement(sql);
+
+        //converte o objeto file em array de bytes
+        InputStream is = new FileInputStream( f );
+        byte[] bytes = new byte[(int)f.length() ];
+        int offset = 0;
+        int numRead = 0;
+        while (offset < bytes.length
+               && (numRead=is.read(bytes, offset, bytes.length-offset)) >= 0) {
+            offset += numRead;
+        }
+
+        pstm.setString( 1, f.getName() );
+        pstm.setBytes( 2, bytes );
+        pstm.execute();
+        pstm.close();
+        conn.close();
+        return true;
+
+    } catch (SQLException erro) {
+        JOptionPane.showMessageDialog(null, "CandidatoDAO" + erro);
+    }catch (IOException ex) {
+        JOptionPane.showMessageDialog(null, "CandidatoDAO" + ex);
+    }
+    return false;
+}
     
     public static void main(String[] args) {
         // TODO code application logic here
