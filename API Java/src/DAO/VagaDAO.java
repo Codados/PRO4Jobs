@@ -2,6 +2,7 @@ package DAO;
 
 import DTO.Candidato;
 import DTO.Vaga;
+import java.awt.List;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -23,7 +24,6 @@ public class VagaDAO {
     
         public void alterarnumeroCandidato(Vaga objvaga){
             String sql = "update vaga set quantidade_candidatos = quantidade_candidatos + 1 where id_vaga = ?";
-            String sql2 = "insert into candidato_vaga (fk_cpf, fk_id_vaga, status_vaga, motivo)values (?, ?, 'Em análise','Ainda sem resposta')";
             conn = new ConexaoDAO().conectaBD();
             
             try{
@@ -32,25 +32,18 @@ public class VagaDAO {
                 pstm.execute();
                 pstm.close();
                 
-                pstm = conn.prepareStatement(sql2);
-                pstm.setString(1, objcandidato.getCPF());
-                pstm.setInt(2, objvaga.getId_vaga());
-                
-                pstm.execute();
-                pstm.close();
-                
                 
                 JOptionPane.showMessageDialog(null, "Você se candidatou para a vaga" + ":" + objvaga.getNome());
                  
             } catch (SQLException erro){
-                JOptionPane.showMessageDialog(null, "VagaDAO: alterarnumeroCandidato" + erro);
+                JOptionPane.showMessageDialog(null, "alterarnumeroCandidato" + erro);
             }
         }   
     
          
         public void cadastrarvaga(Vaga obj_cadastro_vaga){
             
-            String sql = "insert into vaga(nome_vaga, descricao_vaga, pretencao_salarial, cargo, experiencia_profissional_necessaria, quantidade_candidatos, status) values (?, ?, ?, ?, ?, 0,, ?)";
+            String sql = "insert into vaga(nome_vaga, descricao_vaga, pretencao_salarial, cargo, experiencia_profissional_necessaria, quantidade_candidatos) values (?, ?, ?, ?, ?, 0)";
             conn = new ConexaoDAO().conectaBD();
             
             try {
@@ -62,7 +55,6 @@ public class VagaDAO {
                 pstm.setDouble(3,obj_cadastro_vaga.getSalario());
                 pstm.setString(4,obj_cadastro_vaga.getCargo());
                 pstm.setString(5,obj_cadastro_vaga.getExpe_prof());
-                pstm.setString(6, obj_casdastro_vaga.getStatus());
                 
                 pstm.execute();
                 pstm.close();
@@ -98,7 +90,7 @@ public class VagaDAO {
                 }
                 
             } catch(SQLException erro){
-                JOptionPane.showMessageDialog(null,"VagaDAO: PesquisarVagas" + erro);
+                JOptionPane.showMessageDialog(null,"VagaDAO: Pesquisar" + erro);
             }
             
             return lista;
@@ -116,10 +108,65 @@ public class VagaDAO {
                 return rs;
                 
             } catch (SQLException erro){
-                JOptionPane.showMessageDialog(null, "VagaDAO: Pesquisa" + erro);
+                JOptionPane.showMessageDialog(null, "Pesquisa" + erro);
                 return null;
             }
         }
+        
+        
+        public ArrayList<Vaga> FiltrarVaga(String nome, String cargo){
+            String sql = "Select * from vaga where nome_vaga like ? and cargo like ?";
+            conn = new ConexaoDAO().conectaBD();
+            
+            try{
+                pstm = conn.prepareStatement(sql);
+                pstm.setString(1, "%"+nome+"%");
+                pstm.setString(2, "%"+cargo+"%");
+                ResultSet rs = pstm.executeQuery();
+                
+                while(rs.next()){
+                    Vaga objvaga = new Vaga();
+                    objvaga.setId_vaga(rs.getInt("id_vaga"));
+                    objvaga.setNome(rs.getString("nome_vaga"));
+                    objvaga.setDescricao(rs.getString("descricao_vaga"));
+                    objvaga.setSalario(rs.getDouble("pretencao_salarial"));
+                    objvaga.setCargo(rs.getString("cargo"));
+                    objvaga.setExpe_prof(rs.getString("experiencia_profissional_necessaria"));
+                    lista.add(objvaga);
+                }
+                
+            } catch (SQLException erro){
+                JOptionPane.showMessageDialog(null, "Filtro normal" + erro);
+                return null;
+            } return lista;
+        }
+        
+         public ArrayList<Vaga> FiltrarVagapret (Double pret){
+            String sql = "Select * from vaga where pretencao_salarial = ?;";
+            conn = new ConexaoDAO().conectaBD();
+            
+            try{
+                pstm = conn.prepareStatement(sql);
+                pstm.setDouble(1,pret);
+                ResultSet rs = pstm.executeQuery();
+                
+                while(rs.next()){
+                    Vaga objvaga = new Vaga();
+                    objvaga.setId_vaga(rs.getInt("id_vaga"));
+                    objvaga.setNome(rs.getString("nome_vaga"));
+                    objvaga.setDescricao(rs.getString("descricao_vaga"));
+                    objvaga.setSalario(rs.getDouble("pretencao_salarial"));
+                    objvaga.setCargo(rs.getString("cargo"));
+                    objvaga.setExpe_prof(rs.getString("experiencia_profissional_necessaria"));
+                    lista.add(objvaga);
+                }
+                
+            } catch (SQLException erro){
+                JOptionPane.showMessageDialog(null, "Filtro pretensao" + erro);
+                return null;
+            } return lista;
+        }
+        
         
         public void alterarVaga(Vaga objvaga){
             String sql = "update vaga set nome_vaga = ?, descricao_vaga = ?, pretencao_salarial = ?, cargo = ?, experiencia_profissional_necessaria = ? where id_vaga = ?";
