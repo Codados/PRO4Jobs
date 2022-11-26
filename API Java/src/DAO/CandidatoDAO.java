@@ -27,6 +27,38 @@ public class CandidatoDAO {
     Connection conn;
     PreparedStatement pstm;
     
+    ArrayList<Candidato_Vaga> lista = new ArrayList<>();
+    
+    public ArrayList<Candidato_Vaga> MostrarVagas(Candidato objcandidato){
+        
+        String sql = "select v.nome_vaga,cv.status_vaga,cv.motivo from vaga as v "
+                + "inner join candidato_vaga as cv on v.id_vaga = cv.fk_id_vaga "
+                + "inner join candidato as cand on cand.cpf = cv.fk_cpf where cpf = ?";
+        
+        conn = new ConexaoDAO().conectaBD();
+        
+        try{
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, objcandidato.getCPF());
+            ResultSet rs = pstm.executeQuery();
+            
+            while (rs.next()){
+                Candidato_Vaga objcv = new Candidato_Vaga();
+                objcv.setNome_vaga(rs.getString("nome_vaga"));
+                objcv.setStatus(rs.getString("status_vaga"));
+                objcv.setMotivo(rs.getString("motivo"));
+                lista.add(objcv);
+                
+            }
+           
+            
+        } catch(SQLException e){
+            JOptionPane.showMessageDialog(null, "CandidatoDAO: MostrarVagas" + e);
+            return null;
+        }
+        return lista;
+    }
+    
     public ResultSet LoginCandidato(Candidato objcandidato){
         String sql = "select * from candidato where cpf = ? and senha = MD5(?)";
         conn = new ConexaoDAO().conectaBD();
