@@ -42,6 +42,13 @@ public class TabelaVagas extends javax.swing.JFrame {
         txtPrenSal = new javax.swing.JTextField();
         txtCargo = new javax.swing.JTextField();
         txtExp = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        nomevaga = new javax.swing.JTextField();
+        pretvaga = new javax.swing.JTextField();
+        cargovaga = new javax.swing.JTextField();
         AltVaga = new javax.swing.JButton();
         jbtnExcluir = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -109,6 +116,32 @@ public class TabelaVagas extends javax.swing.JFrame {
         txtExp.setText("Experiencia Necessária");
         getContentPane().add(txtExp, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 580, 150, 30));
 
+        jButton3.setBackground(new java.awt.Color(243, 84, 22));
+        jButton3.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setText("Filtrar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 470, 140, 40));
+
+        jLabel4.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        jLabel4.setText("Cargo");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 460, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        jLabel2.setText("Nome Vaga");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
+        jLabel3.setText("Pretensão Salarial");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 460, 170, -1));
+        getContentPane().add(nomevaga, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 210, 30));
+        getContentPane().add(pretvaga, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 480, 220, 30));
+        getContentPane().add(cargovaga, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 480, 220, 30));
+
         AltVaga.setText("Alterar Vaga");
         AltVaga.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,6 +208,15 @@ public class TabelaVagas extends javax.swing.JFrame {
         txtExp.setText(tblvaga.getModel().getValueAt(setar, 5).toString());
     }//GEN-LAST:event_jButton2ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        if(pretvaga.getText().length()>0){
+            listfiltrarVagas(nomevaga.getText(),cargovaga.getText());
+            listfiltrarVagaspret(Double.parseDouble(pretvaga.getText()));
+        }else{
+            listfiltrarVagas(nomevaga.getText(), cargovaga.getText());
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -212,11 +254,18 @@ public class TabelaVagas extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AltVaga;
+    private javax.swing.JTextField cargovaga;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton jbtnExcluir;
+    private javax.swing.JTextField nomevaga;
+    private javax.swing.JTextField pretvaga;
     private javax.swing.JTable tblvaga;
     private javax.swing.JTextField txtCargo;
     private javax.swing.JTextField txtDesc;
@@ -275,6 +324,56 @@ private void alterarVaga(){
     VagaDAO objvagadao = new VagaDAO();
     objvagadao.alterarVaga(objvaga);
     }
+
+private void listfiltrarVagas(String nome, String cargo){
+    try{
+        VagaDAO objvagadao = new VagaDAO();
+        DefaultTableModel model = (DefaultTableModel) tblvaga.getModel();
+        model.setNumRows(0);
+        
+        ArrayList<Vaga> lista = objvagadao.FiltrarVaga(nome, cargo);
+        
+        for (int num = 0; num < lista.size(); num++){
+            model.addRow(new Object[]{
+               
+                lista.get(num).getId_vaga(),
+                lista.get(num).getNome(),
+                lista.get(num).getDescricao(),
+                lista.get(num).getSalario(),
+                lista.get(num).getCargo(),
+                lista.get(num).getExpe_prof()
+            });
+        }
+        
+    } catch(Exception erro){
+        JOptionPane.showMessageDialog(null, "Listar Vagas" + erro);
+    }
+}
+
+private void listfiltrarVagaspret(Double pret){
+    try{
+        VagaDAO objvagadao = new VagaDAO();
+        DefaultTableModel model = (DefaultTableModel) tblvaga.getModel();
+        model.setNumRows(0);
+        
+        ArrayList<Vaga> lista = objvagadao.FiltrarVagapret(pret);
+        
+        for (int num = 0; num < lista.size(); num++){
+            model.addRow(new Object[]{
+               
+                lista.get(num).getId_vaga(),
+                lista.get(num).getNome(),
+                lista.get(num).getDescricao(),
+                lista.get(num).getSalario(),
+                lista.get(num).getCargo(),
+                lista.get(num).getExpe_prof()
+            });
+        }
+        
+    } catch(Exception erro){
+        JOptionPane.showMessageDialog(null, "Listar Vagas Pretensao" + erro);
+    }
+}
 
 private void ExcluirVaga(){
         int id_vaga;
