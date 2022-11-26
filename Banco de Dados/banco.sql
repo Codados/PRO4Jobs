@@ -9,6 +9,7 @@ email varchar(30) not null,
 telefone bigint not null,
 endereco varchar(60) null,
 pretencao_salarial numeric(7,2) null,
+arquivo blob null,
 senha varchar(3000) not null,
 primary key (cpf)
 );
