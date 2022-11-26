@@ -10,6 +10,9 @@ import DTO.Experiencia_Academica;
 import DTO.Experiencia_Profissional;
 import javax.swing.JOptionPane;
 import DTO.ValidaCPF;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 
 /**
  *
@@ -20,8 +23,10 @@ public class CadastroCandidato extends javax.swing.JFrame {
     /**
      * Creates new form CadastroCandidato
      */
+    
     public CadastroCandidato() {
         initComponents();
+        pdfanexa.setVisible(false);
     }
 
     /**
@@ -33,6 +38,7 @@ public class CadastroCandidato extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        pdfanexa = new javax.swing.JFileChooser();
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -64,6 +70,9 @@ public class CadastroCandidato extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         jComboBox2 = new javax.swing.JComboBox<>();
         jComboBox3 = new javax.swing.JComboBox<>();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -75,9 +84,17 @@ public class CadastroCandidato extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        pdfanexa.setAccessory(jButton1);
+        pdfanexa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pdfanexaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(pdfanexa, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
+
         jButton1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Cadastrar");
+        jButton1.setText("Anexar PDF");
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
@@ -206,6 +223,31 @@ public class CadastroCandidato extends javax.swing.JFrame {
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Banco de Dados", "Full Stack", "BackEnd", "FrontEnd", "Machine Learning", "Programação Python" }));
         getContentPane().add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 390, 130, -1));
 
+        jButton2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setText("Anexar PDF");
+        jButton2.setBorder(null);
+        jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 470, 240, 40));
+
+        jButton3.setText("Cadastrar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 550, 160, 40));
+
+        jLabel14.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel14.setText("Arquivo não selecionado");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 440, 290, 20));
+
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/candidato-cadastro2.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -60, -1, 700));
@@ -228,7 +270,35 @@ public class CadastroCandidato extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        long telefone;
+        pdfanexa.setVisible(true);
+
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtsemacademicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsemacademicaActionPerformed
+
+        if (txtsemacademica.isSelected()) {
+            txtacademica.setVisible(false);
+        } else {
+            txtacademica.setVisible(true);
+        }
+    }//GEN-LAST:event_txtsemacademicaActionPerformed
+
+    private void txtsemprofissionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsemprofissionalActionPerformed
+        if (txtsemprofissional.isSelected()) {
+            txtprofissional.setVisible(false);
+        } else {
+            txtprofissional.setVisible(true);
+        }
+
+
+    }//GEN-LAST:event_txtsemprofissionalActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+         long telefone;
         double salario;
         String nome, data, email, CPF, endereco, senha, confirma, formacaoAcademica, formacaoProfissional, naopossuiAcd, naopossuiProf, CPFV;
 
@@ -293,27 +363,18 @@ public class CadastroCandidato extends javax.swing.JFrame {
         else {
             JOptionPane.showMessageDialog(null, "CPF Inválido");
         }
+     
+    }//GEN-LAST:event_jButton3ActionPerformed
 
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void txtsemacademicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsemacademicaActionPerformed
-
-        if (txtsemacademica.isSelected()) {
-            txtacademica.setVisible(false);
-        } else {
-            txtacademica.setVisible(true);
-        }
-    }//GEN-LAST:event_txtsemacademicaActionPerformed
-
-    private void txtsemprofissionalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtsemprofissionalActionPerformed
-        if (txtsemprofissional.isSelected()) {
-            txtprofissional.setVisible(false);
-        } else {
-            txtprofissional.setVisible(true);
-        }
-
-
-    }//GEN-LAST:event_txtsemprofissionalActionPerformed
+    private void pdfanexaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pdfanexaActionPerformed
+        // TODO add your handling code here
+        String apdf = "";
+        File f = new  File(apdf);
+        
+        jLabel14.setText(pdfanexa.getSelectedFile().getAbsolutePath());
+        apdf = jLabel14.getText();
+        pdfanexa.setVisible(false);
+    }//GEN-LAST:event_pdfanexaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -352,6 +413,8 @@ public class CadastroCandidato extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
@@ -360,6 +423,7 @@ public class CadastroCandidato extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -375,6 +439,7 @@ public class CadastroCandidato extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JFileChooser pdfanexa;
     private javax.swing.JTextArea txtacademica;
     private javax.swing.JPasswordField txtconfirma;
     private javax.swing.JFormattedTextField txtcpf;
