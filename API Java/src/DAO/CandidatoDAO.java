@@ -153,11 +153,9 @@ public class CandidatoDAO {
             offset += numRead;
         }
 
-        pstm.setString( 1, f.getName() );
-        pstm.setBytes( 2, bytes );
+        pstm.setBytes( 1, bytes);
         pstm.execute();
         pstm.close();
-        conn.close();
         return true;
 
     } catch (SQLException erro) {
