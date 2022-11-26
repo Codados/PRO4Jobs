@@ -16,7 +16,10 @@ public class Vaga {
     private String Cargo;
     private String Expe_prof;
     private int id_vaga;
-
+    private int quant_candidatos;
+    private String status;
+    
+    
     public String getNome() {
         return Nome;
     }
@@ -76,6 +79,35 @@ public class Vaga {
      */
     public void setId_vaga(int id_vaga) {
         this.id_vaga = id_vaga;
+    }
+    
+    
+    /**
+     * @return the quant_candidatos
+     */
+    public int getQuant_candidatos() {
+        return quant_candidatos;
+    }
+
+    /**
+     * @param quant_candidatos the quant_candidatos to set
+     */
+    public void setQuant_candidatos(int quant_candidatos) {
+        this.quant_candidatos = quant_candidatos;
+    }
+
+    /**
+     * @return the status
+     */
+    public String getStatus() {
+        return status;
+    }
+
+    /**
+     * @param status the status to set
+     */
+    public void setStatus(String status) {
+        this.status = status;
     }
 
 }
