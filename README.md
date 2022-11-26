@@ -67,16 +67,7 @@
 </p>
 </details> 
 
-<details><summary><h2>Kanban</h2></summary>
-<p align = "center"> 
-<img width="800" height="500" src="org.png">
-</p>
-</details>
-<br>
 
-## :compass: Cronograma:
-<img width="600" height="300" src="Crono.png">
-<br>
 
 <details><summary><h2>Users Storys :man_shrugging:</h2></summary>
 <p>
@@ -171,11 +162,6 @@
 <br>
 
 
-<details><summary><h2>Modelo Entidade Relacional</h2></summary>
-<p align = "center">
-<img width="850" height="700" src="MER.png">
-</p>
-</details> 
 
 
 <details><summary><h2>Demonstração do Projeto</h2></summary>
