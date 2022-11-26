@@ -23,11 +23,19 @@ public class VagaDAO {
     
         public void alterarnumeroCandidato(Vaga objvaga){
             String sql = "update vaga set quantidade_candidatos = quantidade_candidatos + 1 where id_vaga = ?";
+            String sql2 = "insert into candidato_vaga (fk_cpf, fk_id_vaga, status_vaga, motivo)values (?, ?, 'Em análise','Ainda sem resposta')";
             conn = new ConexaoDAO().conectaBD();
             
             try{
                 pstm = conn.prepareStatement(sql);
                 pstm.setInt(1, objvaga.getId_vaga());
+                pstm.execute();
+                pstm.close();
+                
+                pstm = conn.prepareStatement(sql2);
+                pstm.setString(1, objcandidato.getCPF());
+                pstm.setInt(2, objvaga.getId_vaga());
+                
                 pstm.execute();
                 pstm.close();
                 
