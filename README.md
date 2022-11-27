@@ -158,7 +158,7 @@
 
 
 ## :chart_with_downwards_trend: BurnDown da 3ª Sprint
-![3burn](https://user-images.githubusercontent.com/102261833/200205029-6ce248a4-3933-403a-8343-e0585b9f1567.png)
+<img src="Imagens_projeto/burn_3sprint.png"></p>
 
 <br>
 
