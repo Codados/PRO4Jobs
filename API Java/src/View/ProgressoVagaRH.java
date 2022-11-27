@@ -129,17 +129,8 @@ public class ProgressoVagaRH extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        int setar = tblvaga.getSelectedRow();
-        
-        String id;
-
-        id = tblvaga.getModel().getValueAt(setar, 0).toString();
-        
-        Vaga objvaga = new Vaga();
-        
-        int id_temp = Integer.valueOf(id);
-        
-        objvaga.setId_vaga(id_temp);
+        new AvaliaCandidato().setVisible(true);
+        this.setVisible(false);
 
 
     }//GEN-LAST:event_jButton3ActionPerformed
