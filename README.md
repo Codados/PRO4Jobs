@@ -1,5 +1,6 @@
 <h1 align="center"> Grupo Codados</h1>
-![PRO4Jobs](https://user-images.githubusercontent.com/83841092/204154580-4e36620e-7984-44ad-a3c8-13e21c5c6f24.gif)
+<img src = "![PRO4Jobs](https://user-images.githubusercontent.com/83841092/204154700-a82849e2-fd66-4c71-a436-e12909642bba.gif)">
+
 
 <p align = "center">
 <img width="460" height="460" src="PRO4Jobs.gif">
