@@ -18,6 +18,7 @@ public class Vaga {
     private int id_vaga;
     private int quant_candidatos;
     private String status;
+
     
     
     public String getNome() {
