@@ -5,6 +5,7 @@
 package DAO;
 
 import DTO.Candidato;
+import DTO.Candidato_Vaga;
 import DTO.Experiencia_Academica;
 import DTO.Experiencia_Profissional;
 import View.CadastroCandidato;
@@ -17,6 +18,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 /**
  *
@@ -168,6 +170,40 @@ public class CandidatoDAO {
     
     public static void main(String[] args) {
         // TODO code application logic here
+    }
+    
+    public ResultSet mostrarformacaoacademica(Candidato objcandidato){
+        String sql = "select * from formacao_academica where fk_cpf = ?";
+        conn = new ConexaoDAO().conectaBD();
+        
+        try{
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, objcandidato.getCPF());
+            ResultSet rs = pstm.executeQuery();
+            return rs;
+            
+        } catch(SQLException e){
+            JOptionPane.showMessageDialog(null, "mostrarformacaoacademica" + e);
+            return null;
+        }
+        
+    }
+    
+        public ResultSet mostrarexperienciaprofissional(Candidato objcandidato){
+        String sql = "select * from experiencia_profissional where fk_cpf = ?";
+        conn = new ConexaoDAO().conectaBD();
+        
+        try{
+            pstm = conn.prepareStatement(sql);
+            pstm.setString(1, objcandidato.getCPF());
+            ResultSet rs = pstm.executeQuery();
+            return rs;
+            
+        } catch(SQLException e){
+            JOptionPane.showMessageDialog(null, "mostrarexperienciaprofissional" + e);
+            return null;
+        }
+        
     }
     
 }

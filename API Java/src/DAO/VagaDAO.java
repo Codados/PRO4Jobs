@@ -1,8 +1,8 @@
 package DAO;
 
 import DTO.Candidato;
+import DTO.Candidato_Vaga;
 import DTO.Vaga;
-import java.awt.List;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -20,8 +20,9 @@ public class VagaDAO {
     PreparedStatement pstm;
     
     ArrayList<Vaga> lista = new ArrayList<>();
+    ArrayList<Candidato_Vaga> lista2 = new ArrayList<>();
     
-    
+
         public void alterarnumeroCandidato(Vaga objvaga, Candidato objcandidato){
             String sql = "update vaga set quantidade_candidatos = quantidade_candidatos + 1 where id_vaga = ?";
             String sql2 = "insert into candidato_vaga (fk_cpf, fk_id_vaga, status_vaga, motivo)values (?, ?, 'Em análise','Ainda sem resposta')";
@@ -228,8 +229,96 @@ public class VagaDAO {
         
             
         }
+    
+        public ArrayList<Candidato_Vaga> AvaliaCandidato(Vaga objvaga){
+            String sql = "select fk_cpf, status_vaga from candidato_vaga where fk_id_vaga = ?";
+            conn = new ConexaoDAO().conectaBD();
+        
+        try{
+            pstm = conn.prepareStatement(sql);
+            
+            pstm.setInt(1, objvaga.getId_vaga());
+            
+            ResultSet rs = pstm.executeQuery();
+            while(rs.next()){
+                Candidato_Vaga objcandidatovaga = new Candidato_Vaga(); 
+                objcandidatovaga.setCpf(rs.getString("fk_cpf"));
+                objcandidatovaga.setStatus(rs.getString("status_vaga"));
+                lista2.add(objcandidatovaga);
+            }
+            
+            
+        } catch (SQLException e){
+            JOptionPane.showMessageDialog(null, "AvaliaCandidato" + e);
+        }
+        return lista2;
+        }
+        
+        
+        public void aprovacandidato(Candidato objcandidato){
+            String sql = "update candidato_vaga set status_vaga = 'APROVADO' where fk_cpf = ?";
+            conn = new ConexaoDAO().conectaBD();
+            
+            try{
+                pstm = conn.prepareStatement(sql);
+                pstm.setString(1, objcandidato.getCPF());
+                pstm.execute();
+                pstm.close();
+                JOptionPane.showMessageDialog(null, "Candidato aprovado");
+                      
+                
+            } catch(SQLException e){
+                JOptionPane.showMessageDialog(null, "APROVA candidato" + e);
+            }
+        }
+        
+        
+        
+        
+        
+        
+        public void reprovacandidato(Candidato_Vaga objcandidatovaga){
+            String sql = "update candidato_vaga set status_vaga = 'REPROVADO', motivo = ? where fk_cpf = ?";
+            conn = new ConexaoDAO().conectaBD();
+        
+            try{
+                pstm = conn.prepareStatement(sql);
+                pstm.setString(1, objcandidatovaga.getMotivo());
+                pstm.setString(2, objcandidatovaga.getCpf());
+                pstm.execute();
+                pstm.close();
+                JOptionPane.showMessageDialog(null, "Candidato reprovado");
+            
+            
+            } catch(SQLException e){
+                JOptionPane.showMessageDialog(null, "REPROVA candidato" + e);
+                
+            }   
+        }
+        
+        public ResultSet analisecandidato(Candidato objcandidato){
+            String sql = "select * from candidato where cpf = ?";
+            conn = new ConexaoDAO().conectaBD();
+        
+            try{
+                pstm = conn.prepareStatement(sql);
+                pstm.setString(1, objcandidato.getCPF());
+                ResultSet rs = pstm.executeQuery();
+                return rs;
+                
+            } catch(SQLException e){
+                JOptionPane.showMessageDialog(null, "analisecandidato" + e);
+                return null;
+            }
+        }
+        
+       
         
     
+        
+        
+        
+        
             public static void main(String[] args) {
      
         
