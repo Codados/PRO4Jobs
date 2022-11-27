@@ -124,7 +124,7 @@
 
 ## :chart_with_downwards_trend: BurnDown da 1ª Sprint
 
-![Screenshot](burn.png)
+<p align = "center">[<img src="Imagens_projeto/burn.png"></p>
 <br>
 
 ## 🏁 Sprint Backlog da 2ª Sprint(19/09 - 09/10)
