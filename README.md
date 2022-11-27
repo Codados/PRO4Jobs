@@ -1,5 +1,5 @@
 <h1 align="center"> Grupo Codados</h1>
-<img src = "Imagens_projeto/PRO4Jobs.gif">
+<img width="460" height="460" src = "Imagens_projeto/PRO4Jobs.gif">
 
 
 <p align = "center">
