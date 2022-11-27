@@ -202,8 +202,6 @@ Create_Candidato_Csv();    }//GEN-LAST:event_jButton2ActionPerformed
                 sb.append(";");
                 temp2 = Double.toString(rs.getInt("pretencao_salarial"));
                 sb.append(String.valueOf(rs.getDouble("pretencao_salarial")));
-                sb.append(";");
-                sb.append(rs.getString("senha"));
                 sb.append("\n");
 
             }
@@ -277,13 +275,11 @@ Create_Candidato_Csv();    }//GEN-LAST:event_jButton2ActionPerformed
             rs = pstm.executeQuery();
 
             String temp2;
-             sb.append("CPF CANDIDATO;ID DA VAGA;STATUS DA VAGA; MOTIVO\n");
+             sb.append("CPF CANDIDATO;ID DA VAGA;STATUS DA VAGA\n");
             while (rs.next()) {
                 sb.append(rs.getString("fk_cpf"));
                 temp2 = Integer.toString(rs.getInt("fk_id_vaga"));
                 sb.append(rs.getString("status_vaga"));
-                sb.append(";");
-                sb.append(rs.getString("motivo"));
                 sb.append("\n");
 
             }
