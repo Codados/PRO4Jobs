@@ -170,8 +170,9 @@ public class CadastroRH extends javax.swing.JFrame {
             if (senha.equals(confirma)) {
 
                 objrhdao.cadastrarRh(objrh);
+                new LoginUnificado().setVisible(true);
                 this.setVisible(false);
-                new LoginRH().setVisible(true);
+                
 
             } else {
                 JOptionPane.showMessageDialog(null, "As senhas não são as mesmas");
