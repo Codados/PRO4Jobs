@@ -1,5 +1,4 @@
 <h1 align="center"> Grupo Codados</h1>
-<img width="center" height="center" src = "Imagens_projeto/PRO4Jobs.gif">
 
 
 <p align = "center">
@@ -28,13 +27,13 @@
 ## Integrantes do grupo :woman_technologist: :man_technologist: : </br>
 | Integrante | Função |
 | --- | --- |
-| `Cainan Thomas Branco Santos` | Desenvolvedor <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/cainan-santos-70938094/ "link")|
-| `Daniele de Jesus Souza` | Desenvolvedora <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/daniele-de-jesus-souza-35859a209 "link")|
-| `Felipe dos Santos Bispo` |  Desenvolvedor <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/felipe-bispo-632104235/ "link") |
-| `Guilherme Augusto Wunderlich Serapião` | Desenvolvedor <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/guilherme-wunderlich-aa56a2228/ "link") |
-| `Júlia Pereira Quitério` | Desenvolvedora <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/j%C3%BAlia-quit%C3%A9rio-934894205/ "link") |
-| `Lucas Emanoel Teixeira Engracio da Silva` |Product Owner <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/lucas-emanoel-teixeira-engracio-da-silva-ab5611234/ "link")|
-| `Marcella Yanes Borges do Amaral` | Scrum Master <br><p align = "center">[<img width="35" height="35" src="link.png"></p>](https://www.linkedin.com/in/marcella-yanes-589371209/ "link")|
+| `Cainan Thomas Branco Santos` | Desenvolvedor <br><p align = "center">[<img width="35" height="35" src="Imagens_projeto/link.png"></p>](https://www.linkedin.com/in/cainan-santos-70938094/ "link")|
+| `Daniele de Jesus Souza` | Desenvolvedora <br><p align = "center">[<img width="35" height="35" src="Imagens_projeto/link.png"></p>](https://www.linkedin.com/in/daniele-de-jesus-souza-35859a209 "link")|
+| `Felipe dos Santos Bispo` |  Desenvolvedor <br><p align = "center">[<img width="35" height="35" src="Imagens_projeto/link.png"></p>](https://www.linkedin.com/in/felipe-bispo-632104235/ "link") |
+| `Guilherme Augusto Wunderlich Serapião` | Desenvolvedor <br><p align = "center">[<img width="35" height="35" src="Imagens_projeto/link.png"></p>](https://www.linkedin.com/in/guilherme-wunderlich-aa56a2228/ "link") |
+| `Júlia Pereira Quitério` | Desenvolvedora <br><p align = "center">[<img width="35" height="35" src="Imagens_projeto/link.png"></p>](https://www.linkedin.com/in/j%C3%BAlia-quit%C3%A9rio-934894205/ "link") |
+| `Lucas Emanoel Teixeira Engracio da Silva` |Product Owner <br><p align = "center">[<img width="35" height="35" src="Imagens_projeto/link.png"></p>](https://www.linkedin.com/in/lucas-emanoel-teixeira-engracio-da-silva-ab5611234/ "link")|
+| `Marcella Yanes Borges do Amaral` | Scrum Master <br><p align = "center">[<img width="35" height="35" src="Imagens_projeto/link.png"></p>](https://www.linkedin.com/in/marcella-yanes-589371209/ "link")|
 <br>
 
 ## :page_facing_up: Backlog do Produto:
@@ -65,7 +64,7 @@
 
 <details><summary><h2>Tecnologias Utilizadas :electric_plug:</h2></summary>
 <p align = "center">
-<img width="500" height="400" src="tecnologias.png">
+<img width="500" height="400" src="Imagens_projeto/tecnologias.png">
 </p>
 </details> 
 
@@ -178,14 +177,14 @@
 
 <details><summary><h2>Demonstração do Projeto</h2></summary>
 <p align = "center">
-<img width="500" height="400" src="tela1.gif">
+<img width="500" height="400" src="Imagens_projeto/tela1.gif">
 </p>
 <br>
 <p align = "center">
-<img width="492" height="400" src="tela2.gif">
+<img width="492" height="400" src="Imagens_projeto/tela2.gif">
 </p>
 <br>
 <p align = "center">
-<img width="500" height="400" src="tela3.gif">
+<img width="500" height="400" src="Imagens_projeto/tela3.gif">
 </p>
 </details>
