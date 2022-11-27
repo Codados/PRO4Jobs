@@ -176,7 +176,7 @@
 
 ## :chart_with_downwards_trend: BurnDown da 4ª Sprint
 
-<img src="Imagens_projeto/burnd4s.PNG"></p>
+<img src="Imagens_projeto/burnd4.PNG"></p>
 <br>
 
 <details><summary><h2>Demonstração do Projeto</h2></summary>
