@@ -209,6 +209,8 @@ Create_Candidato_Csv();    }//GEN-LAST:event_jButton2ActionPerformed
             }
             pw.write(sb.toString());
             pw.close();
+            
+            JOptionPane.showMessageDialog(null,"Foi criado o arquivo Candidatos.csv");
 
         } catch (Exception e) {
 
@@ -250,6 +252,8 @@ Create_Candidato_Csv();    }//GEN-LAST:event_jButton2ActionPerformed
             }
             pw.write(sb.toString());
             pw.close();
+            
+            JOptionPane.showMessageDialog(null,"Foi criado o arquivo Vagas.csv");
 
         } catch (Exception e) {
 
@@ -266,20 +270,18 @@ Create_Candidato_Csv();    }//GEN-LAST:event_jButton2ActionPerformed
             ConexaoDAO conexao = new ConexaoDAO();
             conn = conexao.conectaBD();
 
-            String sql = "select * from candidato_vaga";
+            String sql = "select * from candidato_vaga where status_vaga = 'APROVADO'";
 
             pstm = conn.prepareStatement(sql);
 
             rs = pstm.executeQuery();
 
             String temp2;
-             sb.append("CPF CANDIDATO;ID DA VAGA;STATUS DA VAGA; PROCESSO DA VAGA; MOTIVO\n");
+             sb.append("CPF CANDIDATO;ID DA VAGA;STATUS DA VAGA; MOTIVO\n");
             while (rs.next()) {
                 sb.append(rs.getString("fk_cpf"));
                 temp2 = Integer.toString(rs.getInt("fk_id_vaga"));
                 sb.append(rs.getString("status_vaga"));
-                sb.append(";");
-                sb.append(rs.getString("processo_vaga"));
                 sb.append(";");
                 sb.append(rs.getString("motivo"));
                 sb.append("\n");
@@ -287,6 +289,8 @@ Create_Candidato_Csv();    }//GEN-LAST:event_jButton2ActionPerformed
             }
             pw.write(sb.toString());
             pw.close();
+            
+            JOptionPane.showMessageDialog(null,"Foi criado o arquivo Candidatos Aprovados.csv");
 
         } catch (Exception e) {
 
