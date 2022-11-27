@@ -158,7 +158,7 @@
 
 
 ## :chart_with_downwards_trend: BurnDown da 3ª Sprint
-<img src="Imagens_projeto/burn_3_sprint.png"></p>
+<img src="Imagens_projeto/burnd3.PNG"></p>
 
 <br>
 
