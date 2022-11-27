@@ -174,6 +174,10 @@
 - Emitir relatórios dos Candidatos Aprovados.
 <br>
 
+## :chart_with_downwards_trend: BurnDown da 4ª Sprint
+
+
+<br>
 
 <details><summary><h2>Demonstração do Projeto</h2></summary>
 <p align = "center">
