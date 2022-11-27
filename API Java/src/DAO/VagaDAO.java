@@ -22,7 +22,7 @@ public class VagaDAO {
     ArrayList<Vaga> lista = new ArrayList<>();
     
     
-        public void alterarnumeroCandidato(Vaga objvaga){
+        public void alterarnumeroCandidato(Vaga objvaga, Candidato objcandidato){
             String sql = "update vaga set quantidade_candidatos = quantidade_candidatos + 1 where id_vaga = ?";
             String sql2 = "insert into candidato_vaga (fk_cpf, fk_id_vaga, status_vaga, motivo)values (?, ?, 'Em análise','Ainda sem resposta')";
             
