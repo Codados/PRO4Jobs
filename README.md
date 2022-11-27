@@ -62,6 +62,10 @@
 ### Legenda: 1- Imprescendível; 2- Importante; 3- Desejável
 <br>
 
+## Cronograma:
+<img width="650" height="400" src="Imagens_projeto/Crono.png">
+<br>
+
 <details><summary><h2>Tecnologias Utilizadas :electric_plug:</h2></summary>
 <p align = "center">
 <img width="500" height="400" src="Imagens_projeto/tecnologias.png">
