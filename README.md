@@ -147,10 +147,10 @@
 ## 🏁 Sprint Backlog da 3ª Sprint(13/10 - 06/11)
 
 - Visualizar Vagas de Emprego;
-- Anexar Currículo;
-- Criar relatório das Vagas;
+- Anexar Currículo; (Adiado para Sprint 4)
+- Criar relatório das Vagas; (Adiado para Sprint 4)
 - Cadastrar Candidato a Vaga;
-- Emitir relatórios dos Candidatos;
+- Emitir relatórios dos Candidatos; (Adiado para Sprint 4)
 - Excluir Vaga de Emprego;
 - Alterar Vaga de Emprego.
 <br>
@@ -163,6 +163,15 @@
 
 ## 🏁 Sprint Backlog da 4ª Sprint(07/11 - 27/11)
 
+- Criar relatório das Vagas;
+- Anexar Currículo;
+- Emitir relatórios dos Candidatos;
+- Avaliar Candidato;
+- Gerar relatório para o RH;
+- Implementar progresso do Candidato;
+- Filtrar Vagas por Área de Atuação;
+- Emitir relatórios dos Candidatos Aprovados.
+<br>
 
 
 <details><summary><h2>Demonstração do Projeto</h2></summary>
