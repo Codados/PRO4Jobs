@@ -352,8 +352,10 @@ public class CadastroCandidato extends javax.swing.JFrame {
 
                 objcandidatodao.cadastrarCandidato(objcandidato);
                 objcandidatodao.cadastrarexperiencias(objexacd, objcandidato, objexprof);
+                pdfanexaActionPerformed();
+                new LoginUnificado().setVisible(true);
                 this.setVisible(false);
-                new LoginCandidato().setVisible(true);
+                
 
             } else {
 
