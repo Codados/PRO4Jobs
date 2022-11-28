@@ -184,15 +184,6 @@
 <br>
 
 <details><summary><h2>Demonstração do Projeto</h2></summary>
-<p align = "center">
-<img width="492" height="400" src=""C:\Users\julia\Videos\Captures\Tela_Candidatos.mp4"">
-</p>
-<br>
-<p align = "center">
-<img width="492" height="400" src="Imagens_projeto/tela2.gif">
-</p>
-<br>
-<p align = "center">
-<img width="500" height="400" src="Imagens_projeto/tela3.gif">
-</p>
+Para acessar os vídeos de demostração do nosso projeto, acesse o link abaixo(*motivos pelo qual o Github não suporta os vídeos*)
+https://drive.google.com/drive/folders/1wqiqsq3aQir5B2MOyxil-OBtq8jBcIi6?usp=share_link
 </details>
