@@ -185,7 +185,7 @@
 
 <details><summary><h2>Demonstração do Projeto</h2></summary>
 <p align = "center">
-<img width="500" height="400" src="Imagens_projeto/tela1.gif">
+<img width="492" height="400" src=""C:\Users\julia\Videos\Captures\Tela_Candidatos.mp4"">
 </p>
 <br>
 <p align = "center">
